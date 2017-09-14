@@ -1,0 +1,1468 @@
+/*
+Critical Path CSS
+Only for reference
+*/
+
+/*
+1. Reset
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; display: inline; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+figure { margin: 10% 0; }
+figcaption { text-align: center; }
+img { border: 0; -ms-interpolation-mode: bicubic;}
+a:hover, a:active, a:focus { outline: none; -moz-outline-style: none;}
+input {-webkit-border-radius:0; border-radius:0;}
+::-webkit-input-placeholder {color: #000;}
+:-moz-placeholder {color: #000;}
+::-moz-placeholder {color: #000;}
+:-ms-input-placeholder {color: #000;}
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+::-moz-selection {background: #d7d7d7; /* Gecko Browsers */}
+hr {border-bottom: 1px solid #999; border-top: none; border-left: none; border-right: none;}
+
+/*
+2. Basic Layout
+*/
+
+body {
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #000;
+	background: #fff;
+}
+
+#primary {
+	padding: 0 15px;
+	display:block;
+}
+
+.site-content .post,
+.site-content .ello,
+.site-content .pinseldisko,
+.site-content .podcast,
+.site-content .page {
+	position: relative;
+	display: block;
+	max-width: 960px;
+	margin: 0;
+	padding: 0 0 70px;
+	clear: both;
+}
+
+.site-content .post .entry-intro,
+.site-content .post .entry-content,
+.site-content .ello .entry-content,
+.site-content .pinseldisko .entry-summary,
+.site-content .podcast .entry-content,
+.site-content .page .entry-content {
+	max-width: 700px;
+}
+
+/*
+3. Header
+*/
+
+#masthead {
+	position:relative;
+	display:block;
+	padding: 15px 0 48px 0;
+	margin-bottom:40px;
+}
+
+/* This is for posts with Thumbnails */
+.home #masthead {
+	margin-bottom:0px;
+}
+
+#site-branding {
+	display: none;
+}
+
+/*
+4. General Styles
+*/
+
+/* --- Headings --- */
+h1, h2, h3, h4, h5, h6 {
+	margin: 40px 0 5px;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.5;
+	-webkit-hyphens: auto;
+	   -moz-hyphens: auto;
+	    -ms-hyphens: auto;
+			hyphens: auto;
+}
+
+/* --- Text Elements --- */
+p {
+	margin-bottom: 20px;
+}
+.single .entry-content p:last-child {
+	margin-bottom:0px;
+}
+ul, ol {
+	margin: 0 0 20px 0;
+	padding-left: 40px;
+	list-style-position: inside;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+.entry-content ul,
+.entry-content ol {
+	padding-left: 40px;
+}
+.entry-content ul li,
+.entry-content ol li,
+#comments ul li,
+#comments ol li  {
+	margin-bottom: 4px;
+	list-style-position: outside;
+}
+img {
+	max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
+}
+address {
+	margin: 0 0 34px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.6;
+	font-style: normal;
+}
+
+/* --- Alignment --- */
+.alignleft,
+.alignright {
+	display: block;
+}
+.alignleft {
+	margin: 0 25px 5px 0;
+	float: left;
+}
+.alignright {
+	margin: 0 0 0 20px;
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+img.alignleft,
+img.alignright {
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+/* --- Forms --- */
+input,
+textarea {
+	padding: 7px 2%;
+	border: 1px solid #ddd;
+	background: #fff;
+	color: #000;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.62;
+	vertical-align: top;
+}
+input:hover,
+textarea:hover {
+	background: #fff;
+}
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+	border: 1px solid #000;
+	outline: none;
+}
+form label {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+/* --- Buttons --- */
+input[type="button"],
+input[type="submit"] {
+	margin: 0 0 0 10px;
+	padding: 5px 0 0;
+	display: inline-block;
+	border: none;
+	color: #000;
+	vertical-align: top;
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-bottom: 1px solid #000;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+/*
+5. Links 
+*/
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+#mobile-menu-toggle {
+	border-bottom: 1px solid #000;
+}
+.entry-header h1.entry-title a, 
+.entry-header h2.entry-title a
+{
+	border-bottom:0px;
+}
+.single-post .entry-content a,
+.single-ello .entry-content a,
+.single-pinseldisko .entry-content a,
+.single-podcast .entry-content a,
+.page .entry-content a,
+.post-type-archive-ello .entry-content a,
+.pingback a, 
+.authorbox a
+{
+	color:#990000;
+	border-bottom: 1px solid #990000;
+}
+.more-link {
+	border-bottom: 1px solid #000;
+}
+.page .entry-content .more-link {
+	color:black;
+	border-bottom: 1px solid #000;
+}
+
+/*
+6. Navigation
+*/
+
+#mobile-menu-toggle {
+	display: inline-block;
+	margin: 0 15px 15px;
+	float: right;
+	cursor: pointer;
+}
+.menu-container {
+	border-top: 1px solid #ddd;
+}
+#site-nav {
+	display: none;
+	overflow: hidden;
+	clear: both;
+	padding: 0;
+}
+.menu-open #site-nav {
+	display:  block;
+}
+#site-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#site-nav ul li  {
+	display: block;
+	margin: 0;
+	padding: 14px 0;
+	border-bottom: 1px solid #ddd;
+}
+#site-nav ul li a {
+	display: inline-block;
+	padding: 0 15px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+.current-menu-item {
+	font-weight: 600;
+}
+
+/* --- Search --- */
+
+.search-header {
+	display: block;
+	margin-top:-2px;
+}
+.show-mobile-search .search-header {
+	display: block !important;
+}
+.search-header #searchform {
+	position: relative;
+}
+.search-header #searchform input {
+	padding: 14px 14px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #000;
+	background: #f2f2f2;
+	width: 100%;
+	line-height: 1.4;
+}
+.search-toggle,
+#searchform .screen-reader-text ,
+.search-header #searchform input.submit {
+	display: none;
+}
+
+/*
+7. Article Styles
+*/
+
+.site-content .post:last-of-type,
+.site-content .ello:last-of-type,
+.site-content .pinseldisko:last-of-type,
+.site-content .podcast:last-of-type, 
+.site-content .page:last-of-type {
+	padding: 0;
+}
+
+.site-content .entry-header {
+	display: block;
+	max-width: 700px;
+	padding: 0;
+}
+
+.single-post .entry-header h1.entry-title,
+.page .entry-header h1.entry-title {
+	padding: 0 0 15px;
+}
+
+/* 
+8. Thumbnail 
+*/
+
+.entry-thumbnail {
+	padding: 0 0 0 0px;
+	line-height: 0;
+	margin-bottom:40px;
+}
+
+.post-type-archive-pinseldisko .entry-thumbnail {
+	margin-bottom:20px;
+}
+
+.home article .addwhite {
+	padding-top:40px;
+}
+
+/*
+9. Archives
+*/
+
+.home article:first-child {
+	margin-top:0px;
+	padding-top:0px;
+}
+.home article:last-child,
+.post-type-archive-ello article:last-child {
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+.home article h2:first-child,
+.archive article h2:first-child {
+	margin-top: 0px;
+}
+.post-type-archive-ello .entry-content blockquote p {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+article h1:first-child {
+	margin-top:0px;
+}
+.category .site-content article,
+.tag .site-content article, 
+.search-results .site-content article {
+	padding-top:0;
+	margin-top:0;
+}
+.category .type-post p,
+.tag .type-post p,
+.search-results .type-post p {
+	margin-bottom:10px;
+}
+.home .entry-date,
+.category .entry-date,
+.tag .entry-date,
+.author .entry-date,
+.post-type-archive-pinseldisko .entry-date,
+.post-type-archive-podcast .entry-date,
+.search-results .entry-date {
+	font-size: 13px; 
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+.blog .entry-header h2.entry-title,
+.archive .entry-header h2.entry-title,
+.single .entry-header h1.entry-title {
+	padding: 0 0 12px 0;
+}
+.blog .entry-header h2.entry-title a,
+.archive .entry-header h2.entry-title a {
+	display: inline-block;
+}
+
+.cat-title,
+.tag-title,
+.author-title,
+.search-results-title {
+	margin: 0;
+	margin-bottom:3px;
+	padding: 0;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-weight: 600;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	display:block;
+}
+.cat-header,
+.tag-header,
+.author-header,
+.search-results-title {
+	margin-bottom:50px;
+}
+.cat-description,
+.tag-description,
+.author-description {
+	margin: 0;
+	padding: 5px 0 0 0;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	display:block;
+}
+
+/*
+10. Search Results
+*/
+
+.search-results .site-content .page:last-of-type {
+	padding: 0;
+}
+.search-results .site-content .post,
+.search-results .site-content .page {
+	clear: both;
+	overflow: hidden;
+}
+.search-no-results .entry-content #searchform input#s {
+	width: 60%;
+	background: #fff;
+	border: 1px solid #cacaca;
+	padding: 11px 10px;
+}
+.search-results .type-post, 
+.search-results .type-podcast, 
+.search-results .type-page, 
+.search-results .type-ello, 
+.search-results .type-pinseldisko
+{
+	padding-bottom:80px !important;
+	margin-bottom:0 !important;
+}
+.search-results .site-content .page
+{padding:0;}
+.no-results label {
+	display:none;
+}
+.no-results .entry-content {
+	margin-bottom: 30px;
+}
+
+/*
+11. Meta
+*/
+
+.entry-sketchnote-name, .entry-sketchnote-description {
+	margin:0;
+	padding:0;
+	font-weight: normal;
+}
+
+/*
+12. Quotes
+*/
+
+/* General */
+blockquote.wp-embedded-content
+{
+	border:0;
+	font-size:1.5rem;
+}
+blockquote.wp-embedded-content a
+{
+	text-decoration:none;
+	border:0 !important;
+}
+.entry-content blockquote p
+{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.entry-content blockquote p:last-child  {
+	margin-bottom: 20px;
+}
+
+/*
+13. Post Format Quote
+*/
+
+.ello-quote .entry-title {
+	display:none;
+}
+.format-quote .entry-content blockquote {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.format-quote .entry-content p {
+	font-size: 24px;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	font-style: normal;
+}
+.format-quote .entry-content cite {
+	margin: 4px 0 0 0;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	text-align: right;
+} 
+.single-format-quote .entry-header,
+.single-format-quote .entry-meta,
+.single-format-quote .authorbox,
+.single-format-quote #comments {
+	display:none;
+}
+
+/*
+14. Image Post Format
+*/
+
+.single-format-image .entry-meta,
+.single-format-image .authorbox,
+.single-format-image #comments {
+	display:none;
+}
+
+/* 
+15. Typography
+*/
+
+.entry-content p,
+.entry-intro p,
+.entry-summary p,
+.entry-content p.standard-text,
+.entry-content ul,
+.entry-content ol,
+.entry-content .wide-content {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.69;
+}
+p.justify {
+	text-align: justify;
+}
+.entry-content blockquote,
+.entry-content blockquote p {
+	font-style: italic;
+}
+.entry-content blockquote cite {
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-style: italic;
+	display: block;
+	padding: 6px 0 0 0;
+}
+.entry-content blockquote cite:before {
+	content: '\2013';
+	display: inline;
+	padding: 0 2px 0 0;
+	-webkit-font-smoothing: antialiased;
+}
+.entry-content p.pull-left,
+.entry-content p.pull-right {
+	margin-bottom: 20px;
+}
+.entry-content .wide-content:last-child {
+	margin-bottom: 0;
+}
+.entry-content .wide-content:last-child {
+	margin-bottom: 0;
+}
+.entry-content p.pull-left,
+.entry-content p.pull-right {
+	margin-bottom: 26px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1.6;
+	font-style: italic;
+}
+.entry-content p.pull-right {
+	text-align: right;
+}
+
+/*
+16. Images / Video 
+*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+a[rel~="attachment"],
+a[href$=jpg],
+a[href$=jpeg],
+a[href$=jpe],
+a[href$=png],
+a[href$=gif]{
+    border-bottom: none !important;
+}
+img.wp-post-image {
+	padding: 0;
+}
+img.img-border {
+	max-width:98.1%;
+	padding:5px;
+	background:#fff;
+	border:1px solid #ddd;
+}
+.widget img {
+	max-width:100%;
+	height:auto;
+}
+.wp-caption.alignnone {
+	margin: 0;
+}
+.wp-caption {
+	max-width: 100%;
+}
+img#wpstats {
+	display: none;
+}
+.entry-content p.wp-caption-text,
+.widget p.wp-caption-text,
+.type-attachment .entry-content .entry-caption p {
+	font-size: 13px;
+	font-size: 0.8125rem;
+	line-height: 1.35;
+	font-style: italic;
+}
+.entry-content p.wp-caption-text,
+.type-attachment .entry-content .entry-caption p {
+	margin: 0;
+	padding: 4px 2px 20px;
+}
+.entry-content .alignleft p.wp-caption-text {
+	text-align: left;
+}
+.entry-content .alignright p.wp-caption-text {
+	text-align: right;
+	margin-right: 6px;
+}
+embed,
+iframe,
+object,
+video {
+	max-width:100%;
+}
+.entry-content .twitter-tweet-rendered {
+	max-width: 100% !important; /* Override the Twitter embed fixed width */
+}
+
+/*
+19. Page Template Full
+*/
+
+.template-fullwidth .page .entry-header,
+.template-fullwidth .page .entry-content,
+.template-fullwidth .page .entry-meta {
+	max-width: 1300px !important;
+}
+
+.template-fullwidth h1 {
+	display:none;
+}
+
+/*
+20. 404
+*/
+
+.error404 .site-content .entry-wrap {
+	overflow: hidden;
+}
+
+/*
+22. Search Form
+*/
+
+.entry-content .searchform span {
+	display: none;
+}
+
+/*
+23. Columns
+*/
+
+/* --- Multi Columns --- */
+.two-columns-one {
+	width:100%;
+}
+.entry-content .two-columns-one {
+	position: relative;
+	float: left;
+	margin-bottom: 50px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.59;
+}
+.entry-content .two-columns-one p {
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.59;
+	margin-bottom: 12px;
+}
+.entry-content .two-columns-one h2:first-child,
+.entry-content .two-columns-one h3:first-child,
+.entry-content .two-columns-one h4:first-childd {
+	margin-top: 0;
+}
+.last {
+	clear: right;
+	margin-right: 0 !important;
+}
+.divider,
+.divider-border {
+	width: 100%;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	display: block;
+	clear: both;
+}
+.divider-border {
+	border-bottom:1px solid #000;
+}
+.entry-content .divider
+{
+	display:none;
+}
+.entry-content .last {
+	margin-bottom:0;
+}
+
+/* 
+25. Buttons 
+*/
+
+.standard-btn {
+	display: inline-block;
+	margin: 0 0 20px;
+	padding: 12px 18px 11px;
+	overflow: hidden;
+	cursor: pointer;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	background: #000;
+	color: rgba(255, 255, 255, 0.85);
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none !important;
+}
+.post .entry-content a.standard-btn,
+.page .entry-content a.standard-btn {
+	color: rgba(255, 255, 255, 0.85);
+	border: none;
+}
+.round-btn {
+ -webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	     border-radius: 50px;
+}
+.bold-btn {
+	font-weight:bold;
+}
+.standard-btn.xsmall-btn {
+	padding: 10px 15px;
+	font-size: 10px;
+	font-size: 0.625rem;
+}
+.standard-btn.small-btn {
+	padding: 12px 20px;
+	font-size: 11px;
+	font-size: 0.6875rem;
+}
+.black-btn {background: #161616; color: rgba(255, 255, 255, 0.85);}
+.black-btn:hover {background: #000; color: #fff;}
+
+/* 
+29. Mathilda 
+*/
+
+#mathilda-area
+{margin-top:0px;}
+
+.mathilda-tweet
+{margin-bottom:60px;clear:both;}
+
+.mathilda-tweet-symbol
+{float:left;box-shadow:none !important;}
+
+.entry-content p.mathilda-tweet-dateandtime
+{margin-bottom:3px;font-size:80%;}
+
+.mathilda-tweet-text, .mathilda-tweet-url, .mathilda-tweet-dateandtime
+{margin-left:50px;}
+
+.mathilda-tweet-text
+{margin-bottom:10px;}
+
+.mathilda-tweet-image
+{padding-left:50px;max-width:100%;}
+
+.entry-content .mathilda-url-follows
+{margin-bottom:2px;}
+
+.mathilda_bottom_new_tweets 
+{text-align:right;float:right;}
+
+.mathilda-embed
+{margin-top:10px;}
+
+iframe.wp-embedded-content
+{margin-left: 0 !important;
+padding-left: 0 !important;}
+
+.mathilda-tweet a
+{color:darkred !important;}
+
+.mathilda-tweet-url
+{overflow:hidden; }
+
+a.mathilda-tweet-url-link
+{border-bottom-color:darkred !important;overflow:hidden; }
+
+a.mathilda-hashtag, a.mathilda-mention
+{border-bottom-width:0;}
+
+.mathilda-tweet-text
+{margin-bottom:10px;}
+
+.mathilda-is-here h1.entry-title
+{display:none;}
+
+.mathilda-is-here .site-content article
+{max-width:100%;}
+
+.mathilda-is-here .entry-content
+{max-width:100% !important;}
+
+.mathilda-tweet-image
+{max-width:100% !important;}
+
+blockquote.wp-embedded-content {
+margin-left: 0;
+padding-left: 0;
+}
+
+iframe.twitter-tweet
+{
+	padding-left:0;
+}
+
+/*
+30. Pinseldisko
+*/
+
+.post-type-archive-pinseldisko .entry-date {
+	margin-top:10px;
+}
+.single-pinseldisko .entry-content strong
+{
+	color:black;
+	font-weight: 600;
+}
+.post-type-archive .type-pinseldisko img
+{
+	margin-top:10px;
+}
+
+/* 
+31. Zimtwolke 
+*/
+
+.post-type-archive-ello .entry-content {
+	margin-bottom:20px;
+}
+
+.btn-zimt-comments {
+	display: inline-block;
+	margin: 0 0 0 0px;
+	overflow: hidden;
+	cursor: pointer;
+	background: #000;
+	color: rgba(255, 255, 255, 0.85);
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-decoration: none !important;
+	padding: 5px 8px;
+	font-size: 10px;
+	font-size: 0.625rem;
+}
+
+.btn-zimt-comments a {
+	color: white;
+	border: none;
+}
+
+.zimt-comments-yes
+{
+	background-color:#ac1b1b !important;
+}
+
+/* 
+32. Page WordPress Plugin
+*/
+
+/* @ DEV */
+
+.page-id-1880 .noborder
+{border-bottom: 1px !important;} 
+
+/* @ PROD */
+
+.page-id-2169 .noborder
+{border-bottom: 1px !important;} 
+
+/* 
+36. Microformats
+*/
+
+.microformats, div.microformats {
+	display:none !important;
+}
+
+/*
+38. Attachment Image
+*/
+
+.type-attachment .entry-meta,
+.type-attachment .authorbox,
+.type-attachment .author-bio {
+	display:none;
+}
+
+/*
+36. Media Queries
+*/
+
+/* Minimum width of 767 pixels (tablets portrait)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 767px) {
+	/* --- General Styles --- */
+	#primary,
+	#site-nav ul li a,
+	.search-header #searchform input {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	/* --- Header --- */
+	#masthead {
+		padding-top: 0;
+	}
+	.home #masthead {
+		padding-bottom: 60px;
+	}
+	#mobile-menu-toggle {
+		margin: 35px 35px;
+	}
+
+	/* --- Posts --- */
+	.site-content .post,
+	.site-content .type-attachment,
+	.search-results .site-content .page {
+		padding: 0 0 125px;
+	}
+	.entry-content p.intro {
+		font-size: 22px;
+		font-size: 1.375rem;
+		line-height: 1.4;
+	}
+	.entry-content p.pull-left {
+		margin: 2px 30px 10px 0;
+		max-width: 330px;
+		float: left;
+	}
+	.entry-content p.pull-right {
+		margin: 2px 0 10px 30px;
+		max-width: 330px;
+		float: right;
+	}
+
+	/* --- Shortcodes --- */
+	.dark-box {
+		padding: 20px;
+	}
+	.two-columns-one {width: 46%;}
+	.two-columns-one {
+		position:relative;
+		float:left;
+		margin-bottom: 0;
+	}
+	.two-columns-one {margin: 0 4% 0 0;}
+	.two-columns-one.last {margin: 0 4% 0;}
+	.divider,
+	.divider-border {
+		margin-bottom: 30px;
+		padding-top: 30px;
+	}
+
+	/* Abstände */
+
+	#masthead {
+		margin-bottom:80px;
+	}
+
+	.home article .addwhite {
+		padding-top:37px;
+	}
+
+	.entry-thumbnail {
+		margin-bottom:60px;
+	}
+
+	.site-content .post,
+	.site-content .ello,
+	.site-content .pinseldisko,
+	.site-content .podcast,
+	.site-content .type-attachment,
+	.search-results .site-content .page {
+		padding: 0 0 110px;
+	}
+
+	.cat-header,
+	.tag-header,
+	.author-header,
+	.search-results-title {
+		margin-bottom:60px;
+	}
+
+}
+
+/* Minimum width of 1023 pixels (tablets landscape)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1023px) {
+	/* --- General Styles --- */
+	#primary,
+	#site-title,
+	#site-nav ul li a,
+	.search-header #searchform input {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	/* --- Header --- */
+	#mobile-menu-toggle {
+		margin: 35px 50px;
+	}
+
+	/* Abstände */
+
+	#masthead {
+		margin-bottom:80px;
+	}
+
+	.home article .addwhite {
+		padding-top:37px;
+	}
+
+	.entry-thumbnail {
+		margin-bottom:80px;
+	}
+
+	.site-content .post,
+	.site-content .ello,
+	.site-content .pinseldisko,
+	.site-content .podcast,
+	.site-content .type-attachment,
+	.search-results .site-content .page {
+		padding: 0 0 120px;
+	}
+
+}
+
+/* Minimum width of 1150 pixels (laptops 13")
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1150px) {
+
+	/* --- General Styles --- */
+	#main-wrap {
+		padding: 0;
+	}
+
+	.home #masthead {
+		padding-bottom: 60px;
+		margin-bottom:00px;
+	}
+
+	/* --- Main Nav --- */
+	#mobile-menu-toggle {
+		display: none;
+	}
+
+	#site-nav {
+		display: block !important;
+		padding: 0;
+		overflow: hidden;
+		clear: both;
+		float: right;
+		text-align: right;
+	}
+	.menu-container {
+		position: absolute;
+		display: block !important;
+		top: 25px;
+		right: 135px;
+		z-index: 1000;
+		padding: 0 0 0 70px;
+		border-top: none;
+	}
+	#site-nav ul li {
+		position: relative;
+		display: inline-block;
+		margin: 0 0 0 25px;
+		padding: 0;
+		border-bottom: none;
+	}
+	#site-nav ul li a {
+		display: block;
+		padding: 0;
+		color: #000;
+		border-bottom: 1px solid transparent;
+	}
+	#site-nav ul li a:hover {
+		border-bottom: 1px solid #000;
+	}
+
+	#site-nav ul li:hover > ul {
+		display: block;
+		opacity: 1;
+	}
+	#site-nav li:hover > a {
+		border-bottom: 1px solid #000;
+	}
+
+	/* --- Header Search Form --- */
+	.search-toggle {
+		display: block;
+		width: 70px;
+		position: absolute;
+		top: 25px;
+		right: 70px;
+		text-align: right;
+		line-height: 1.4;
+		cursor: pointer;
+		z-index: 1000000;
+	}
+	.search-toggle span:hover {
+		border-bottom: 1px solid #000;
+	}
+	.show-mobile-search .search-header {
+		display: none !important;
+	}
+	.show-desktop-search .show-mobile-search .search-header,
+	.show-desktop-search .search-header  {
+		display: block !important;
+	}
+	.search-header {
+		display: none;
+		position: absolute;
+		top: 57px;
+		right: 70px;
+		z-index: 1000000;
+	}
+	.search-header #searchform {
+		width: 290px;
+	}
+	.search-header #searchform input {
+		padding: 10px 45px 10px 10px;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 1px solid #000;
+		background: #f2f2f2;
+		width: 100%;
+		line-height: 1.4;
+	}
+	.search-header #searchform input:hover,
+	.search-header #searchform input:active,
+	.search-header #searchform input:focus {
+		background: #d2ffe4;
+	}
+	.search-header #searchform input.submit {
+		position: absolute;
+		width: 45px;
+		height: 51px;
+		top: 0;
+		right: 0;
+		padding: 0;
+		display: block;
+		color: #000;
+		background: transparent;
+		border-bottom: none;
+		text-indent: -999999px;
+		z-index: 10000;
+	}
+	.search-header #searchform:after {
+		position: absolute;
+		top: 9px;
+		right: 20px;
+		content: '\2192';
+		display: inline-block;
+		padding: 0;
+		-webkit-font-smoothing: antialiased;
+		vertical-align: top;
+	}
+
+	/* --- Typography Styles --- */
+	.entry-content .wide-content {
+		margin-right: -260px;
+	}
+
+	/* Abstände */
+
+	.home .entry-date,
+	.category .entry-date,
+	.tag .entry-date,
+	.author .entry-date,
+	.post-type-archive-pinseldisko .entry-date,
+	.post-type-archive-podcast .entry-date {
+		padding-top: 0px;
+	}
+
+	#masthead {
+		padding: 26px 0 90px;
+	}
+
+	.single-pinseldisko	#masthead {
+		padding: 26px 0 60px;
+	}
+
+	.home article .addwhite {
+		padding-top:110px;
+	}
+
+	.entry-thumbnail {
+		margin-bottom:70px;
+	}
+
+	.site-content .post,
+	.site-content .ello,
+	.site-content .pinseldisko,
+	.site-content .podcast,
+	.site-content .type-attachment,
+	.search-results .site-content .page {
+		padding: 0 0 120px;
+	}
+
+	#primary {
+		padding-left:70px;
+		padding-right:70px;
+	}
+
+	.site-content .type-pinseldisko {
+		max-width:none;
+	}
+
+}
+
+/* Minimum width of 1260 pixels (bigger desktop monitors)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1260px) {
+
+	.entry-thumbnail {
+		max-width: 960px;
+    }
+    
+	.entry-thumbnail {
+	 	padding-left: 0;
+	 	padding-right: 0;
+	}
+
+	#mathilda_area
+	{
+	max-width: 960px !important;
+	}
+
+}
+
+/* Minimum width of 1400 pixels (15' notebooks and bigger)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1400px) {
+
+	#masthead  {
+		max-width: 1300px;
+		margin: 0 auto 90px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#primary {
+		max-width: 1300px;
+		margin: 0 auto 40px;
+		padding: 26px 0 0px;
+		display:block;
+	}
+
+	.home article .addwhite {
+		padding-top:120px;
+	}
+
+}
+
+/* Minimum width of 1800 pixels  (21' monitors)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 1800px) {
+	
+	#masthead,
+	.site-content .post,
+	.site-content .ello,
+	.site-content .page .entry-content,
+	.site-content .type-attachment,
+	.search-results .site-content .page,
+	.nav-wrap,
+	.site-content .entry-header {
+		margin-left: auto;
+		margin-right: auto;
+    }
+    
+	#masthead,
+	.template-portfolio .entry-header,
+	.single-post .entry-header,
+	.blog .entry-header,
+	.nav-wrap {
+		max-width: 960px;
+	}
+
+	.site-content .entry-header
+	{
+	    max-width: 960px !important;
+	}
+
+	.entry-content
+	{
+		margin-left:0;
+		margin-right:auto;
+	}
+	
+	.archive-header, 
+	.site-content .page .entry-content,
+	.site-content .entry-header
+	{
+		max-width:960px;
+		padding-right:230px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-left:0;
+		padding-left:0;
+	}
+	
+	.post-type-archive-ello .site-content article, 
+	.single-ello .site-content article, 
+	.post-type-archive-pinseldisko .site-content article, 
+	.single-pinseldisko .site-content article,
+	.podcast-widget,
+	.page, .tag-header, .cat-header, .author-header, .search-results-title
+	{
+		max-width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.page .entry-content,
+	.template-fullwidth .page .entry-content,
+	.template-fullwidth .page .entry-header
+	{
+		max-width: 960px !important;
+		padding-right: 230px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+
+
+/* Minimum width of 2400 pixels (27' monitors)
+------------------------------------------------------------------------------------ */
+@media screen and (min-width: 2400px) {
+
+	#primary {
+		max-width: 1900px;
+	}
+	
+	.site-content .page .entry-content {
+		max-width: 700px;
+	}
+	
+	.site-content .page,
+	.site-content .ello,
+	.site-content .pinseldisko,
+	.site-content .podcast
+	{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 960px;
+	}
+
+	.single #comments
+	{
+		max-width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left:0;
+	}
+
+	.blog .entry-header,
+	.single .entry-header,
+	.single .entry-meta {
+		
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.tag-header, .cat-header, .author-header, .search .no-results, .search-results-title {
+		margin-left:auto;
+		margin-right:auto;
+		max-width:960px;
+	}
+
+	#masthead {
+		position:relative;
+		right:-70px;
+	}
+
+}
