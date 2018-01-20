@@ -11,10 +11,13 @@ get_header(); ?>
 
 <main id="primary" class="site-content">
 
-<header class="search-results-title">
-<p class="search-title">
+<header class="search-results-header">
+<div class="search-results-title">
 <?php echo absint($wp_query->found_posts); ?> <?php printf( 'Suchergebnisse für %s', '<span class="searchterm">' . get_search_query() . '</span>' ); ?>
-</p>
+</div>
+<div class="search-results-description">
+Tweets sind von der Suche ausgeschlossen.
+</div>	
 </header>
 
 <?php 		

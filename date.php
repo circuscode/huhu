@@ -32,6 +32,26 @@ get_header(); ?>
 		?>
 		</div>
 
+		<div class="date-description">
+		<?php 
+		
+		if ( is_month() ) {
+			echo 'Alle Beiträge vom ';
+			echo get_the_date( 'F Y' );
+		}
+		elseif ( is_year() ) {
+			echo 'Alle Beiträge des Jahres ';
+			echo get_the_date( 'Y' );
+		}
+		elseif ( is_day() ) {
+			echo 'Alle Beiträge, welche am ';
+			echo get_the_date( );
+			echo ' veröffentlicht wurden';
+		}
+		
+		?>
+		</div>
+
 	</header>
 
 	<?php 

@@ -26,36 +26,47 @@ get_header(); ?>
 
 	while ( have_posts() ) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-		<?php /* Headline */ ?>
-		<header class="entry-header">
-		<h2 class="entry-title">
-		<a href="<?php the_permalink(); ?>" rel="bookmark">
-		<?php the_title(); ?>
-		</a>
-		</h2>
-		</header>
-
-		<?php /* Text */ ?>
-		<div class="entry-content">
 		<?php 
-		if(is_post_type('pinseldisko')) {
-			echo '<p>';
-			the_sketchnote_description();
-			echo '</p>';
-		} else { 
-			the_excerpt();
-		} ?>
-		</div>
+		$format = get_post_format( $post_id ); 
+		if($format!='quote' && $format!='image') {
+		?>
 
-		<?php /* Date */ ?>
-		<footer class="entry-date published">
-		<?php echo get_the_date(); ?>
-		<?php get_template_part( 'microformats' ) ?>
-		</footer>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		</article>
+			<?php /* Headline */ ?>
+			<header class="entry-header">
+			<h2 class="entry-title">
+			<a href="<?php the_permalink(); ?>" rel="bookmark">
+			<?php the_title(); ?>
+			</a>
+			</h2>
+			</header>
+
+			<?php /* Text */ ?>
+			<div class="entry-content">
+			<?php 
+			if(is_post_type('pinseldisko')) {
+				echo '<p>';
+				the_sketchnote_description();
+				echo '</p>'; ?>
+
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+				<?php the_post_thumbnail('thumb'); ?></a>
+				<?php
+			} else { 
+				the_excerpt();
+			} ?>
+			</div>
+
+			<?php /* Date */ ?>
+			<footer class="entry-date published">
+			<?php echo get_the_date(); ?>
+			<?php get_template_part( 'microformats' ) ?>
+			</footer>
+
+			</article>
+
+		<?php } ?>
 
 	<?php endwhile;?>
 

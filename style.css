@@ -626,12 +626,14 @@ article h1:first-child {
 .tag-header,
 .author-header,
 .date-header,
-.search-results-title {
+.search-results-header {
 	margin-bottom:50px;
 }
 .cat-description,
 .tag-description,
-.author-description  {
+.author-description,
+.search-results-description,
+.date-description  {
 	margin: 0;
 	padding: 5px 0 0 0;
 	font-size: 13px;
@@ -2211,7 +2213,7 @@ form label[for=lstc_subscribe] {
 	.tag-header,
 	.author-header,
 	.date-header,
-	.search-results-title {
+	.search-results-header {
 		margin-bottom:60px;
 	}
 
@@ -2773,7 +2775,7 @@ form label[for=lstc_subscribe] {
 	.post-type-archive-pinseldisko .site-content article, 
 	.single-pinseldisko .site-content article,
 	.podcast-widget,
-	.page, .tag-header, .cat-header, .author-header, .date-header, .search-results-title
+	.page, .tag-header, .cat-header, .author-header, .date-header, .search-results-header
 	{
 		max-width: 960px;
 		margin-left: auto;
@@ -2865,7 +2867,7 @@ form label[for=lstc_subscribe] {
 		padding-right: 0px;
 	}
 
-	.tag-header, .cat-header, .author-header, .date-header, .search .no-results, .search-results-title {
+	.tag-header, .cat-header, .author-header, .date-header, .search .no-results, .search-results-header {
 		margin-left:auto;
 		margin-right:auto;
 		max-width:960px;

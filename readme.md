@@ -4,7 +4,7 @@ Huhu is the WordPress Theme running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
-The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's developed specially for [unmus.de](https://www.unmus.de/). Usage on other WordPress instances is not recommended.
+The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's developed specially for [unmus.de](https://www.unmus.de/). It is not recommended to use huhu on other WordPress instances.
 
 ## Supported WordPress Templates
 
@@ -143,6 +143,9 @@ Released: 20.01.2018
 * New: Embed Template
 * Changed: Link Color @ Comments
 * Fixed: Page Template Full Width (now really full width ;-)
+* Fixed: No CPT Quotes & CPT Images in Author Archive
+* Added: Pinseldisko Thumbnails @ Search Results & Archives
+* Added: Search Results Description
 * Added: Theme Icon
 * Added: ReadMe
 
