@@ -30,7 +30,7 @@ get_header(); ?>
 
         ?>
 
-        <a href=" <?php echo wp_get_attachment_url(); ?> " target="_blank">
+        <a href=" <?php echo wp_get_attachment_url(); ?> ">
         <img src="<?php echo $huhu_download_image; ?>" width="500" height="188" alt="Downloaad"/>
         </a>
 
