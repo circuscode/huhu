@@ -143,7 +143,6 @@ Released: 20.01.2018
 * New: Embed Template
 * Changed: Link Color @ Comments
 * Fixed: Page Template Full Width (now really full width ;-)
-* Removed: Post Format Support for Posts
 * Added: Theme Icon
 * Added: ReadMe
 
