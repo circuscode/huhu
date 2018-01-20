@@ -38,6 +38,27 @@ function huhu_shortcode_divider($atts, $content = null) {
 }
 add_shortcode( 'divider', 'huhu_shortcode_divider' );
 
+// Three Columns
+function huhu_shortcode_three_columns_one($atts, $content = null) {
+    return '<div class="three-columns-one">' . huhu_remove_wpautop($content) . '</div>';
+ }
+ add_shortcode( 'three_columns_one', 'huhu_shortcode_three_columns_one' );
+ 
+ function huhu_shortcode_three_columns_one_last($atts, $content = null) {
+    return '<div class="three-columns-one last">' . huhu_remove_wpautop($content) . '</div>';
+ }
+ add_shortcode( 'three_columns_one_last', 'huhu_shortcode_three_columns_one_last' );
+ 
+ function huhu_shortcode_three_columns_two($atts, $content = null) {
+    return '<div class="three-columns-two">' . huhu_remove_wpautop($content) . '</div>';
+ }
+ add_shortcode( 'three_columns_two', 'huhu_shortcode_three_columns_two' );
+ 
+ function huhu_shortcode_three_columns_two_last($atts, $content = null) {
+    return '<div class="three-columns-two last">' . huhu_remove_wpautop($content) . '</div>';
+ }
+ add_shortcode( 'three_columns_two_last', 'huhu_shortcode_three_columns_two_last' );
+
 /*
 Boxes
 */

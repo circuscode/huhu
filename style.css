@@ -52,7 +52,8 @@ Table of Contents:
 36 - Microformats
 37 - Plugin Lightweight Subscribe Comments
 38 - Attachement Image
-39 - Media Queries
+39 - MailChimp
+40 - Media Queries
 
 /*
 1. Reset
@@ -359,6 +360,9 @@ form label {
 	font-size: 1rem;
 	line-height: 1.4;
 }
+#noresults-s {
+	padding: 7px 1%;
+}
 
 /* --- Buttons --- */
 input[type="button"],
@@ -401,7 +405,8 @@ a {
 .page .entry-content a,
 .post-type-archive-ello .entry-content a,
 .pingback a, 
-.authorbox a
+.authorbox a, 
+.comment-text a
 {
 	color:#990000;
 	border-bottom: 1px solid #990000;
@@ -416,6 +421,9 @@ a {
 .page .entry-content .mathilda_bottom_forward_number {
 	color:black;
 	border-bottom: 1px solid #000;
+}
+.pingback a.url {
+	margin-left:7px;
 }
 
 /* --- Hovers --- */
@@ -580,6 +588,7 @@ article h1:first-child {
 .home .entry-date,
 .category .entry-date,
 .tag .entry-date,
+.date .entry-date,
 .author .entry-date,
 .post-type-archive-pinseldisko .entry-date,
 .post-type-archive-podcast .entry-date,
@@ -601,6 +610,7 @@ article h1:first-child {
 .cat-title,
 .tag-title,
 .author-title,
+.date-title,
 .search-results-title {
 	margin: 0;
 	margin-bottom:3px;
@@ -615,6 +625,7 @@ article h1:first-child {
 .cat-header,
 .tag-header,
 .author-header,
+.date-header,
 .search-results-title {
 	margin-bottom:50px;
 }
@@ -1380,6 +1391,7 @@ padding-left:0px !important;
 19. Page Template Full
 */
 
+.page-template-full-width article,
 .template-fullwidth .page .entry-header,
 .template-fullwidth .page .entry-content,
 .template-fullwidth .page .entry-meta {
@@ -1824,6 +1836,10 @@ iframe.twitter-tweet
 {
 	margin-top:10px;
 }
+.pinseldisko .entry-date
+{
+	margin-top: 20px;
+}
 
 /* 
 31. Zimtwolke 
@@ -2035,7 +2051,15 @@ form label[for=lstc_subscribe] {
 }
 
 /*
-39. Media Queries
+39. MailChimp
+*/
+
+#mc_embed_signup form {
+	padding-left:0 !important;
+}
+
+/*
+40. Media Queries
 */
 
 /* Minimum width of 767 pixels (tablets portrait)
@@ -2186,6 +2210,7 @@ form label[for=lstc_subscribe] {
 	.cat-header,
 	.tag-header,
 	.author-header,
+	.date-header,
 	.search-results-title {
 		margin-bottom:60px;
 	}
@@ -2474,6 +2499,7 @@ form label[for=lstc_subscribe] {
 	.home .entry-date,
 	.category .entry-date,
 	.tag .entry-date,
+	.date .entry-date, 
 	.author .entry-date,
 	.post-type-archive-pinseldisko .entry-date,
 	.post-type-archive-podcast .entry-date {
@@ -2747,7 +2773,7 @@ form label[for=lstc_subscribe] {
 	.post-type-archive-pinseldisko .site-content article, 
 	.single-pinseldisko .site-content article,
 	.podcast-widget,
-	.page, .tag-header, .cat-header, .author-header, .search-results-title
+	.page, .tag-header, .cat-header, .author-header, .date-header, .search-results-title
 	{
 		max-width: 960px;
 		margin-left: auto;
@@ -2839,7 +2865,7 @@ form label[for=lstc_subscribe] {
 		padding-right: 0px;
 	}
 
-	.tag-header, .cat-header, .author-header, .search .no-results, .search-results-title {
+	.tag-header, .cat-header, .author-header, .date-header, .search .no-results, .search-results-title {
 		margin-left:auto;
 		margin-right:auto;
 		max-width:960px;

@@ -4,7 +4,7 @@ Huhu is the WordPress Theme running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
-The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's developed specially for [unmus.de](https://www.unmus.de/). Operability on other WordPress instances is not ensured.
+The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's developed specially for [unmus.de](https://www.unmus.de/). Usage on other WordPress instances is not recommended.
 
 ## Supported WordPress Templates
 
@@ -12,10 +12,13 @@ The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](ht
 * Tag Archive
 * Category Archive
 * Author Archive
+* Date Archive
 * Single Post
 * Search
 * Page
 * Image
+* Zip Attachement
+* Embed
 * Header
 * Footer
 * Comments
@@ -76,6 +79,13 @@ Included as reference for manual usage.
 * Shortcodes
 * HTML Filter (ensuring W3C valid HTML output)
 
+## Search
+
+Following Post Formats are not included in search.
+
+* Quotes
+* Images
+
 ## Fonts
 
 Huhu uses the Google Font Source Sans Pro. It will be loaded dynamicly. For local integration all required files are enclosed. 
@@ -120,8 +130,25 @@ This theme does not add any new logic to WordPress or generate new data within W
 
 ## License
 
-This project is licensed under the GPL2 License.
+This project is licensed under the GPL3 License.
 
-## Version
+## Changelog
 
-This is the initial version 0.1.
+### 0.2
+
+Released: 20.01.2018
+
+* New: Date Template 
+* New: Zip Attachement Template
+* New: Embed Template
+* Changed: Link Color @ Comments
+* Fixed: Page Template Full Width (now really full width ;-)
+* Removed: Post Format Support for Posts
+* Added: Theme Icon
+* Added: ReadMe
+
+### 0.1
+
+Released: 14.09.2017
+
+* Inital Theme Release

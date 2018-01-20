@@ -47,7 +47,12 @@ get_header(); ?>
 				if(is_post_type('pinseldisko')) {
 					echo '<p>';
 					the_sketchnote_description();
-					echo '</p>';
+					echo '</p>'; ?>
+
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					<?php the_post_thumbnail('thumb'); ?></a>
+					<?php
+
 				} else { 
 					the_excerpt();
 				} ?>

@@ -261,4 +261,16 @@ require( get_template_directory() . '/inc/filter.php' );
 require( get_template_directory() . '/inc/shortcodes.php' );
 require( get_template_directory() . '/inc/widgets.php' );
 
+add_action( 'admin_init', 'do_something_152677' );
+function do_something_152677 () {
+    // Global object containing current admin page
+    global $pagenow;
+
+    // If current page is post.php and post isset than query for its post type 
+    // if the post type is 'event' do something
+    if ( 'post.php' === $pagenow && isset($_GET['post']) && 'post' === get_post_type( $_GET['post'] ) ) {
+        remove_theme_support('post-formats');
+    }
+}
+
 ?>
