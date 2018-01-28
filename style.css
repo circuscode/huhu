@@ -4,9 +4,9 @@ Theme URI: http://www.unmus.de/wp-content/themes/huhu
 Description: huhu is based on Suidobashi by Elmastudio
 Author: Marco Hitschler
 Author URI: http://www.unmus.de/
-Version: 0.2
+Version: 0.3
 License: GNU General Public License v3
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: simple, minimal, responsive, white
 */
 
@@ -53,7 +53,8 @@ Table of Contents:
 37 - Plugin Lightweight Subscribe Comments
 38 - Attachement Image
 39 - MailChimp
-40 - Media Queries
+40 - Type Raketenstaub
+41 - Media Queries
 
 /*
 1. Reset
@@ -106,12 +107,21 @@ body {
 	clear: both;
 }
 
+.site-content .raketenstaub {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0 0 70px;
+	clear: both;
+}
+
 .site-content .post .entry-intro,
 .site-content .post .entry-content,
 .site-content .ello .entry-content,
 .site-content .pinseldisko .entry-summary,
 .site-content .podcast .entry-content,
-.site-content .page .entry-content {
+.site-content .page .entry-content,
+.site-content .raketenstaub .entry-content {
 	max-width: 700px;
 }
 
@@ -402,6 +412,7 @@ a {
 .single-ello .entry-content a,
 .single-pinseldisko .entry-content a,
 .single-podcast .entry-content a,
+.single-raketenstaub .entry-content a,
 .page .entry-content a,
 .post-type-archive-ello .entry-content a,
 .pingback a, 
@@ -509,7 +520,8 @@ a {
 .site-content .ello:last-of-type,
 .site-content .pinseldisko:last-of-type,
 .site-content .podcast:last-of-type, 
-.site-content .page:last-of-type {
+.site-content .page:last-of-type,
+.site-content .raketenstaub:last-of-type {
 	padding: 0;
 }
 
@@ -575,14 +587,19 @@ article h1:first-child {
 .category .type-pinseldisko p,
 .category .type-ello p,
 .category .type-podcast p,
+.category .type-raketenstaub p,
 .tag .type-post p,
 .tag .type-pinseldisko p,
 .tag .type-ello p,
 .tag .type-podcast p,
+.tag .type-raketenstaub p,
+.date .type-raketenstaub p,
+.author .type-raketenstaub p,
 .search-results .type-post p,
 .search-results .type-pinseldisko p,
 .search-results .type-ello p,
-.search-results .type-podcast p {
+.search-results .type-podcast p,
+.search-results .type-raketenstaub p {
 	margin-bottom:10px;
 }
 .home .entry-date,
@@ -592,6 +609,7 @@ article h1:first-child {
 .author .entry-date,
 .post-type-archive-pinseldisko .entry-date,
 .post-type-archive-podcast .entry-date,
+.post-type-archive-raketenstaub .entry-date,
 .search-results .entry-date {
 	font-size: 13px; 
 	text-transform: uppercase;
@@ -663,7 +681,8 @@ article h1:first-child {
 .search-results .type-podcast, 
 .search-results .type-page, 
 .search-results .type-ello, 
-.search-results .type-pinseldisko
+.search-results .type-pinseldisko,
+.search-results .type-raketenstaub
 {
 	padding-bottom:80px !important;
 	margin-bottom:0 !important;
@@ -709,7 +728,11 @@ article h1:first-child {
 .single-pinseldisko .entry-sketchnote, 
 .single-pinseldisko .entry-cats,
 .single-pinseldisko .entry-date,
-.single-pinseldisko .entry-license
+.single-pinseldisko .entry-license,
+.single-raketenstaub .entry-tags, 
+.single-raketenstaub .entry-cats,
+.single-raketenstaub .entry-date,
+.single-raketenstaub .entry-license,
 {
 	padding:0 !important;
 }
@@ -1073,7 +1096,8 @@ video {
 }
 .single-post .authorbox,
 .single-ello .authorbox,
-.single-pinseldisko .authorbox {
+.single-pinseldisko .authorbox,
+.single-raketenstaub .authorbox {
 	position: relative;
 	padding: 90px 0 0 0;
 }
@@ -1698,6 +1722,7 @@ padding-left:0px !important;
 .wp-pagenavi .current, .wp-pagenavi .page
 {float:left;margin-top:20px;}
 
+
 /* 
 28. Subscribe To Comments Reloaded 
 */
@@ -2061,7 +2086,76 @@ form label[for=lstc_subscribe] {
 }
 
 /*
-40. Media Queries
+40. Raketenstaub
+*/
+
+.post-type-archive-raketenstaub main {
+	text-align:center;
+}
+
+.image-rocket {
+	margin: 0 0px 20px 0px; 
+	padding:0;
+	display:inline-block;
+}
+
+.post-type-archive-raketenstaub .wp-post-image {
+	width:450px;
+}
+
+.post-type-archive-raketenstaub .entry-thumbnail {
+	margin-bottom:0px;
+}
+
+.post-type-archive-raketenstaub .bottom-navigation {
+	clear:both;
+}
+
+.post-type-archive-raketenstaub .wp-pagenavi {
+	margin-top:15px; 
+}
+
+.single-raketenstaub .entry-header {
+	display:none;
+}
+
+.single-raketenstaub .entry-thumbnail {
+	max-width:100%;
+	margin-bottom:20px;
+}
+
+.raketenstaub-nav {
+	margin-top:10px;
+	font-size:13px;
+}
+
+.single-raketenstaub .entry-date, .single-raketenstaub .entry-tags {
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+.single-raketenstaub .entry-date-day, .single-raketenstaub .entry-tags-list {
+	font-style:normal;
+}
+
+.single-raketenstaub .entry-meta {
+	padding-top:0;
+}
+
+.rocket-tags {
+	margin-top:10px;
+}
+
+.tag .raketenstaub h2.entry-title, .search .raketenstaub h2.entry-title, .author .raketenstaub h2.entry-title, .date .raketenstaub h2.entry-title {
+	display:none;
+}
+
+.tag .raketenstaub .entry-date, .author .raketenstaub .entry-date, .date .raketenstaub .entry-date {
+	margin-top:10px;
+}
+
+/*
+41. Media Queries
 */
 
 /* Minimum width of 767 pixels (tablets portrait)
@@ -2186,6 +2280,7 @@ form label[for=lstc_subscribe] {
 	.site-content .ello,
 	.site-content .pinseldisko,
 	.site-content .podcast,
+	.site-content .raketenstaub,
 	.site-content .type-attachment,
 	.search-results .site-content .page {
 		padding: 0 0 110px;
@@ -2215,6 +2310,21 @@ form label[for=lstc_subscribe] {
 	.date-header,
 	.search-results-header {
 		margin-bottom:60px;
+	}
+
+	/* Raketenstaub */
+	.image-rocket {
+		margin: 0 10px 20px 10px; 
+		padding:0;
+	}
+	
+	.post-type-archive-raketenstaub .wp-post-image {
+		width:300px;
+	}
+
+	/* Raketenstaub Edition */
+	.post-type-archive-raketenstaub .wp-pagenavi {
+		margin-top:50px ;
 	}
 
 }
@@ -2254,6 +2364,7 @@ form label[for=lstc_subscribe] {
 	.site-content .ello,
 	.site-content .pinseldisko,
 	.site-content .podcast,
+	.site-content .raketenstaub,
 	.site-content .type-attachment,
 	.search-results .site-content .page {
 		padding: 0 0 120px;
@@ -2290,7 +2401,8 @@ form label[for=lstc_subscribe] {
 
 	.single-post .authorbox,
 	.single-ello .authorbox,
-	.single-pinseldisko .authorbox {
+	.single-pinseldisko .authorbox,
+	.single-raketenstaub .authorbox {
 		position: relative;
 		padding: 110px 0 0 0;
 	}
@@ -2309,6 +2421,18 @@ form label[for=lstc_subscribe] {
 
 	.mathilda_bottom_forward
 	{margin-top:80px;}
+	
+	.post-type-archive-raketenstaub .wp-post-image {
+		width:280px;
+	}
+
+	.post-type-archive-raketenstaub #colophon {
+		 padding: 0 0 80px 0;
+	}
+
+	.post-type-archive-raketenstaub .wp-pagenavi {
+		margin-top:70px ;
+	}
 
 }
 
@@ -2374,6 +2498,9 @@ form label[for=lstc_subscribe] {
 	}
 	#site-nav li:hover > a {
 		border-bottom: 1px solid #000;
+	}
+	.menu-container {
+		width:1000px !important;
 	}
 
 	/* --- Header Search Form --- */
@@ -2504,7 +2631,8 @@ form label[for=lstc_subscribe] {
 	.date .entry-date, 
 	.author .entry-date,
 	.post-type-archive-pinseldisko .entry-date,
-	.post-type-archive-podcast .entry-date {
+	.post-type-archive-podcast .entry-date,
+	.post-type-archive-raketenstaub .entry-date {
 		padding-top: 0px;
 	}
 
@@ -2528,6 +2656,7 @@ form label[for=lstc_subscribe] {
 	.site-content .ello,
 	.site-content .pinseldisko,
 	.site-content .podcast,
+	.site-content .raketenstaub,
 	.site-content .type-attachment,
 	.search-results .site-content .page {
 		padding: 0 0 120px;
@@ -2561,7 +2690,8 @@ form label[for=lstc_subscribe] {
 
 	.single-post .authorbox,
 	.single-ello .authorbox,
-	.single-pinseldisko .authorbox {
+	.single-pinseldisko .authorbox,
+	.single-raketenstaub .authorbox {
 		position: relative;
 		padding: 120px 0 0 0;
 	}
@@ -2613,6 +2743,25 @@ form label[for=lstc_subscribe] {
 		float:left;
 		margin-top:15px;
 		margin-right:10px;
+	}
+
+	/* Raketenstaub */
+
+	.image-rocket {
+		margin: 0 10px 25px 10px; 
+		padding:0;
+	}
+	
+	.post-type-archive-raketenstaub .wp-post-image {
+		  width:250px; 
+	}
+
+	.post-type-archive-raketenstaub .wp-pagenavi {
+		margin-top:90px ;
+	}
+
+	.post-type-archive-raketenstaub #colophon {
+		padding: 0 0 70px 0;
 	}
 
 }
@@ -2686,6 +2835,11 @@ form label[for=lstc_subscribe] {
 
 	#comments .comment-text {
 		padding: 10px 0 0 0px; }
+
+		#masthead {
+			position:relative;
+			right:-70px;
+		}
 }
 
 /* Minimum width of 1800 pixels  (21' monitors)
@@ -2695,6 +2849,7 @@ form label[for=lstc_subscribe] {
 	#masthead,
 	.site-content .post,
 	.site-content .ello,
+	.site-content .raketenstaub,
 	.site-content .page .entry-content,
 	.site-content .type-attachment,
 	.search-results .site-content .page,
@@ -2774,6 +2929,7 @@ form label[for=lstc_subscribe] {
 	.single-ello .site-content article, 
 	.post-type-archive-pinseldisko .site-content article, 
 	.single-pinseldisko .site-content article,
+	.single-raketenstaub .site-content article,
 	.podcast-widget,
 	.page, .tag-header, .cat-header, .author-header, .date-header, .search-results-header
 	{
@@ -2784,7 +2940,8 @@ form label[for=lstc_subscribe] {
 	
 	.single-ello #comments,
 	.single-pinseldisko #comments,
-	.single-podcast #comments
+	.single-podcast #comments,
+	.single-raketenstaub #comments
 	{
 		padding-right:260px;
 		max-width: 960px !important;
@@ -2819,6 +2976,17 @@ form label[for=lstc_subscribe] {
 		margin-right:10px;
 	}
 
+	.post-type-archive-raketenstaub .site-content {
+		max-width: 960px !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#masthead {
+		position:relative;
+		right:-70px;
+	}
+
 }
 
 
@@ -2837,7 +3005,8 @@ form label[for=lstc_subscribe] {
 	.site-content .page,
 	.site-content .ello,
 	.site-content .pinseldisko,
-	.site-content .podcast
+	.site-content .podcast,
+	.site-content .raketenstaub
 	{
 		margin-left: auto;
 		margin-right: auto;

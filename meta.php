@@ -120,6 +120,19 @@
 		<?php } ?>
 	<?php }
 
+	/* Raketenstaub */
+	if($current_format=='raketenstaub') { ?>
+		<div class="entry-date">
+		<span class="entry-date-day published"><?php the_date(); ?></span>
+		</div>
+		<?php get_template_part( 'microformats' ) ?>
+		<?php if(get_the_tags()) { ?>
+			<div class="entry-tags">
+			<span class="entry-tags-list"><?php the_tags('', '<br/>', ''); ?></span>
+			</div>
+		<?php } ?>
+	<?php }
+
 ?>
 
 </div>

@@ -4,7 +4,7 @@ Huhu is the WordPress Theme running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
-The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's developed specially for [unmus.de](https://www.unmus.de/). It is not recommended to use huhu on other WordPress instances.
+The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended (technically possible, but not tested).
 
 ## Supported WordPress Templates
 
@@ -32,6 +32,7 @@ All custom post types have an archive and single template.
 * Episodes (Podlove Publisher)
 * Pinseldisko (unmus related) 
 * Ello (unmus related)
+* Raketenstaub (unmus related)
 
 ## Supported Post Formats
 
@@ -56,6 +57,7 @@ Post Formats are designed for the usage with CPT Ello.
 * Single Post
 * Single Ello
 * Single Pinseldisko
+* Single Raketenstaub
 
 ## Advanced Functionality
 
@@ -133,6 +135,16 @@ This theme does not add any new logic to WordPress or generate new data within W
 This project is licensed under the GPL3 License.
 
 ## Changelog
+
+### 0.3
+
+Released: 28.01.2018
+
+* New: Raketenstaub Archive Template
+* New: Raketenstaub Single Template
+* New: Raketenstaub AMP Template
+* Added: 2 additional Image Sizes
+* Fixed: Position Menu @ Large Screens
 
 ### 0.2
 

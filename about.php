@@ -25,6 +25,9 @@
 	elseif($current_format=='pinseldisko') {
 		echo 'Über den Zeichner';
 	}
+	elseif($current_format=='raketenstaub') {
+		echo 'Über den Photograph';
+	}
 
 ?>
 </div>

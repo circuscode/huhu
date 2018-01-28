@@ -86,11 +86,13 @@
 			</div>
 		<?php endif; ?>
 
+		<?php if (!is_post_type('raketenstaub')) { ?>
 		<p class="wp-embed-heading">
 			<a href="<?php the_permalink(); ?>" target="_top">
 				<?php the_title(); ?>
 			</a>
 		</p>
+		<?php } ?>
 
 		<?php if ( $thumbnail_id && 'square' === $shape ) : ?>
 			<div class="wp-embed-featured-image square">

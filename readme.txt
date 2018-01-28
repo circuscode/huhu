@@ -1,7 +1,7 @@
 === huhu ===
 
 Contributors: unmus
-Stable tag: 0.2
+Stable tag: 0.3
 Requires at least: 4.9
 Tested up to: 4.9.2
 Requires PHP: 7.0
