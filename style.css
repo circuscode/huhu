@@ -98,18 +98,11 @@ body {
 .site-content .ello,
 .site-content .pinseldisko,
 .site-content .podcast,
+.site-content .raketenstaub,
 .site-content .page {
 	position: relative;
 	display: block;
 	max-width: 960px;
-	margin: 0;
-	padding: 0 0 70px;
-	clear: both;
-}
-
-.site-content .raketenstaub {
-	position: relative;
-	display: block;
 	margin: 0;
 	padding: 0 0 70px;
 	clear: both;
@@ -1722,7 +1715,6 @@ padding-left:0px !important;
 .wp-pagenavi .current, .wp-pagenavi .page
 {float:left;margin-top:20px;}
 
-
 /* 
 28. Subscribe To Comments Reloaded 
 */
@@ -1866,6 +1858,10 @@ iframe.twitter-tweet
 .pinseldisko .entry-date
 {
 	margin-top: 20px;
+}
+.single-pinseldisko h1.entry-title
+{
+	display:none;
 }
 
 /* 
@@ -2089,30 +2085,34 @@ form label[for=lstc_subscribe] {
 40. Raketenstaub
 */
 
-.post-type-archive-raketenstaub main {
-	text-align:center;
+.post-type-archive-raketenstaub h1.entry-title {
+	display:none;
 }
 
-.image-rocket {
-	margin: 0 0px 20px 0px; 
-	padding:0;
-	display:inline-block;
+.post-type-archive-raketenstaub .raketenstaub .entry-thumbnail {
+	margin-bottom:20px;
 }
 
-.post-type-archive-raketenstaub .wp-post-image {
-	width:450px;
+.post-type-archive-raketenstaub .entry-content p {
+	margin-bottom: 0px;
 }
 
-.post-type-archive-raketenstaub .entry-thumbnail {
-	margin-bottom:0px;
+.post-type-archive-raketenstaub .entry-content a {
+color: #990000;
+border-bottom: 1px solid #990000;
 }
 
-.post-type-archive-raketenstaub .bottom-navigation {
-	clear:both;
+.site-content .raketenstaub {
+	padding: 0 0 70px;
+	max-width:100%;
 }
 
-.post-type-archive-raketenstaub .wp-pagenavi {
-	margin-top:15px; 
+.post-type-archive-raketenstaub .entry-date {
+	text-transform: none;
+}
+
+.post-type-archive-raketenstaub footer.entry-date.published {
+	display:none;
 }
 
 .single-raketenstaub .entry-header {
@@ -2134,11 +2134,22 @@ form label[for=lstc_subscribe] {
 	margin-top: 5px;
 }
 
-.single-raketenstaub .entry-date-day, .single-raketenstaub .entry-tags-list {
+.post-type-archive-raketenstaub .entry-date {
+	font-size: 13px;
+	margin-top: 0px;
+}
+
+.post-type-archive-raketenstaub .entry-tags {
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+.single-raketenstaub .entry-date-day, .single-raketenstaub .entry-tags-list,
+.post-type-archive-raketenstaub .entry-date-day, .post-type-archive-raketenstaub .entry-tags-list {
 	font-style:normal;
 }
 
-.single-raketenstaub .entry-meta {
+.single-raketenstaub .entry-meta{
 	padding-top:0;
 }
 
@@ -2312,20 +2323,6 @@ form label[for=lstc_subscribe] {
 		margin-bottom:60px;
 	}
 
-	/* Raketenstaub */
-	.image-rocket {
-		margin: 0 10px 20px 10px; 
-		padding:0;
-	}
-	
-	.post-type-archive-raketenstaub .wp-post-image {
-		width:300px;
-	}
-
-	/* Raketenstaub Edition */
-	.post-type-archive-raketenstaub .wp-pagenavi {
-		margin-top:50px ;
-	}
 
 }
 
@@ -2421,18 +2418,6 @@ form label[for=lstc_subscribe] {
 
 	.mathilda_bottom_forward
 	{margin-top:80px;}
-	
-	.post-type-archive-raketenstaub .wp-post-image {
-		width:280px;
-	}
-
-	.post-type-archive-raketenstaub #colophon {
-		 padding: 0 0 80px 0;
-	}
-
-	.post-type-archive-raketenstaub .wp-pagenavi {
-		margin-top:70px ;
-	}
 
 }
 
@@ -2745,23 +2730,9 @@ form label[for=lstc_subscribe] {
 		margin-right:10px;
 	}
 
-	/* Raketenstaub */
-
-	.image-rocket {
-		margin: 0 10px 25px 10px; 
-		padding:0;
-	}
-	
-	.post-type-archive-raketenstaub .wp-post-image {
-		  width:250px; 
-	}
-
-	.post-type-archive-raketenstaub .wp-pagenavi {
-		margin-top:90px ;
-	}
-
-	.post-type-archive-raketenstaub #colophon {
-		padding: 0 0 70px 0;
+	.post-type-archive-raketenstaub .entry-date {
+		font-size: 13px;
+		margin-top: 5px;
 	}
 
 }

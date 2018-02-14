@@ -247,7 +247,7 @@ add_filter( 'amp_post_template_metadata', 'huhu_amp_modify_json_metadata', 10, 2
 Image Size
 */
 
-add_image_size('extra_large', 1300, 9999, false);
+add_image_size('extra_large', 1300, 0, false);
 function huhu_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'extra_large' => __( 'Extra Groß' ),
@@ -262,14 +262,6 @@ function huhu_custom_size_rocket( $sizes ) {
 	) );
 }
 add_filter( 'rocket_thumb', 'huhu_custom_size_rocket' );
-
-add_image_size('mini', 150, 150, true);
-function huhu_custom_size_mini( $sizes ) {
-    return array_merge( $sizes, array(
-        'mini' => __( 'Raketenstaub Archiv' ),
-	) );
-}
-add_filter( 'mini', 'huhu_custom_size_mini' );
 
 /*
 Load

@@ -4,7 +4,7 @@ Huhu is the WordPress Theme running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
-The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended (technically possible, but not tested).
+The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended (but technically possible, not tested).
 
 ## Supported WordPress Templates
 
@@ -85,8 +85,8 @@ Included as reference for manual usage.
 
 Following Post Formats are not included in search.
 
-* Quotes
-* Images
+* Post Format Quote
+* Post Format Image
 
 ## Fonts
 
@@ -107,13 +107,27 @@ Following plugins are required at runtime.
 
 ## Custom Fields Dependencies
 
-Following custom fields are required at runtime.
+Following custom fields are supported.
 
 * Custom Field pinseldisko_sketchnote_description
 * Custom Field licence_type
 * Custom Field licence_version
 * Custom Field licence_include
 * Custom Field licence_exclude
+* Custom Field rocket_photographer_other
+
+## Responsive Resolutions
+
+Following screen resolution are marked up with CSS.
+
+* Smartphone
+* Tablet Portrait
+* Tablet Landscape
+* 13inch
+* Larger Desktop Screens (up to 1260 pixel width)
+* 15inch
+* 21inch
+* 27inch
 
 ## Notes
 
@@ -135,6 +149,15 @@ This theme does not add any new logic to WordPress or generate new data within W
 This project is licensed under the GPL3 License.
 
 ## Changelog
+
+### 0.4
+
+Released: 14.02.2018
+
+* Changed: Raketenstaub Grid View to Classic List View
+* Added: Other Photographs @ Rocket Format
+* Removed: Search Filter for Post Formats Quote & Image
+* Fixed: Social Icons Alignment @ AMP Output
 
 ### 0.3
 
@@ -165,4 +188,4 @@ Released: 20.01.2018
 
 Released: 14.09.2017
 
-* Inital Theme Release
+* Initial Theme Release

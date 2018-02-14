@@ -401,3 +401,15 @@ amp-carousel > amp-img > img {
 	position: absolute;
 	right: 16px;
 }
+
+/* Content Related */
+
+.unmus-social amp-anim {
+	display:inline-block;
+}
+
+.unmus-social {
+	display:block;
+	margin-top:30px;
+	margin-bottom:30px;
+}

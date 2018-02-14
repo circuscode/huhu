@@ -123,7 +123,7 @@
 	/* Raketenstaub */
 	if($current_format=='raketenstaub') { ?>
 		<div class="entry-date">
-		<span class="entry-date-day published"><?php the_date(); ?></span>
+		<span class="entry-date-day published"><?php the_time(get_option('date_format')); ?></span>
 		</div>
 		<?php get_template_part( 'microformats' ) ?>
 		<?php if(get_the_tags()) { ?>
