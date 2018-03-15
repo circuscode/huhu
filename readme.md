@@ -150,6 +150,12 @@ This project is licensed under the GPL3 License.
 
 ## Changelog
 
+### 0.5
+
+Release pending
+
+* Added: Envira Gallery Styles
+
 ### 0.4
 
 Released: 14.02.2018

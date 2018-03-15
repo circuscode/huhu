@@ -54,7 +54,8 @@ Table of Contents:
 38 - Attachement Image
 39 - MailChimp
 40 - Type Raketenstaub
-41 - Media Queries
+41 - Envira
+42 - Media Queries
 
 /*
 1. Reset
@@ -2166,7 +2167,15 @@ border-bottom: 1px solid #990000;
 }
 
 /*
-41. Media Queries
+41. Envira
+*/
+
+.envira-gallery-wrap {
+	padding-top:10px !important;
+}
+
+/*
+42. Media Queries
 */
 
 /* Minimum width of 767 pixels (tablets portrait)
