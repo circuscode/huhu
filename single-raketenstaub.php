@@ -24,9 +24,7 @@ get_header(); ?>
 
         <?php /* Thumbnail */ ?>
         <div class="entry-thumbnail">
-        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
         <?php the_post_thumbnail('extra-large'); ?>
-        </a>
         </div>
 
         <div class="entry-content">
