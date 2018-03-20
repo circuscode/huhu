@@ -1997,6 +1997,29 @@ color: #fff !important;
 background:#459baf; color:#fff
 }
 
+.podlove-global-contributors .episodes-cell li a {
+	background:none !important;
+	padding: 0px !important;
+	line-height: 170%;
+	border-radius: 0px !important;
+}
+
+.podlove-global-contributors .episode-row ul {
+	margin-bottom:25px;
+}
+
+.podlove-global-contributors {
+	border-bottom-width:0;
+}
+
+.podlove-global-contributors .episodes-cell li {
+	display: list-item !important;
+}
+
+.show-all-episodes {
+	display:none;
+}
+
 /* 
 34. Article Specified 
 */
