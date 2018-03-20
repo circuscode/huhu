@@ -163,6 +163,7 @@ Released: 14.02.2018
 
 * Changed: Raketenstaub Grid View to Classic List View
 * Added: Other Photographs @ Rocket Format
+* Added: Contributor List Styles
 * Removed: Search Filter for Post Formats Quote & Image
 * Fixed: Social Icons Alignment @ AMP Output
 
