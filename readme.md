@@ -34,6 +34,12 @@ All custom post types have an archive and single template.
 * Ello (unmus related)
 * Raketenstaub (unmus related)
 
+# Supported Custom Taxonomies
+
+All custom taxonomies have an archive template.
+
+* Artist (Podcast)
+
 ## Supported Post Formats
 
 Post Formats are designed for the usage with CPT Ello.
