@@ -155,6 +155,9 @@ This project is licensed under the GPL3 License.
 Release pending
 
 * Added: Envira Gallery Styles
+* Added: Template & Styles for Custom Taxonomy Artist
+* Added: Contributor List Styles
+* Changed: Bottom Padding H2 Archive View
 * Removed: Selfreferential Link on Single Raketenstaub
 
 ### 0.4
@@ -163,7 +166,6 @@ Released: 14.02.2018
 
 * Changed: Raketenstaub Grid View to Classic List View
 * Added: Other Photographs @ Rocket Format
-* Added: Contributor List Styles
 * Removed: Search Filter for Post Formats Quote & Image
 * Fixed: Social Icons Alignment @ AMP Output
 

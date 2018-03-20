@@ -4,7 +4,7 @@ Theme URI: http://www.unmus.de/wp-content/themes/huhu
 Description: huhu is based on Suidobashi by Elmastudio
 Author: Marco Hitschler
 Author URI: http://www.unmus.de/
-Version: 0.3
+Version: 0.5
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: simple, minimal, responsive, white
@@ -587,6 +587,7 @@ article h1:first-child {
 .tag .type-ello p,
 .tag .type-podcast p,
 .tag .type-raketenstaub p,
+.tax-artist .type-podcast p,
 .date .type-raketenstaub p,
 .author .type-raketenstaub p,
 .search-results .type-post p,
@@ -599,6 +600,7 @@ article h1:first-child {
 .home .entry-date,
 .category .entry-date,
 .tag .entry-date,
+.tax-artist .entry-date,
 .date .entry-date,
 .author .entry-date,
 .post-type-archive-pinseldisko .entry-date,
@@ -614,6 +616,7 @@ article h1:first-child {
 .archive .entry-header h2.entry-title,
 .single .entry-header h1.entry-title {
 	padding: 0 0 12px 0;
+	padding-bottom: 7px;
 }
 .blog .entry-header h2.entry-title a,
 .archive .entry-header h2.entry-title a {
@@ -621,6 +624,7 @@ article h1:first-child {
 }
 .cat-title,
 .tag-title,
+.tax-title,
 .author-title,
 .date-title,
 .search-results-title {
@@ -636,6 +640,7 @@ article h1:first-child {
 }
 .cat-header,
 .tag-header,
+.tax-header,
 .author-header,
 .date-header,
 .search-results-header {
@@ -643,6 +648,7 @@ article h1:first-child {
 }
 .cat-description,
 .tag-description,
+.tax-description,
 .author-description,
 .search-results-description,
 .date-description  {
@@ -2349,6 +2355,7 @@ border-bottom: 1px solid #990000;
 
 	.cat-header,
 	.tag-header,
+	.tax-header,
 	.author-header,
 	.date-header,
 	.search-results-header {
@@ -2645,6 +2652,7 @@ border-bottom: 1px solid #990000;
 	.home .entry-date,
 	.category .entry-date,
 	.tag .entry-date,
+	.tax-artist .entry-date,
 	.date .entry-date, 
 	.author .entry-date,
 	.post-type-archive-pinseldisko .entry-date,
@@ -2934,7 +2942,7 @@ border-bottom: 1px solid #990000;
 	.single-pinseldisko .site-content article,
 	.single-raketenstaub .site-content article,
 	.podcast-widget,
-	.page, .tag-header, .cat-header, .author-header, .date-header, .search-results-header
+	.page, .tag-header, .tax-header, .cat-header, .author-header, .date-header, .search-results-header
 	{
 		max-width: 960px;
 		margin-left: auto;
@@ -3039,7 +3047,7 @@ border-bottom: 1px solid #990000;
 		padding-right: 0px;
 	}
 
-	.tag-header, .cat-header, .author-header, .date-header, .search .no-results, .search-results-header {
+	.tag-header, .tax-header, .cat-header, .author-header, .date-header, .search .no-results, .search-results-header {
 		margin-left:auto;
 		margin-right:auto;
 		max-width:960px;
