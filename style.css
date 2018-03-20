@@ -2188,7 +2188,7 @@ border-bottom: 1px solid #990000;
 }
 
 .tag .raketenstaub h2.entry-title, .search .raketenstaub h2.entry-title, .author .raketenstaub h2.entry-title, .date .raketenstaub h2.entry-title {
-	display:none;
+	/* display:none; */
 }
 
 .tag .raketenstaub .entry-date, .author .raketenstaub .entry-date, .date .raketenstaub .entry-date {

@@ -164,6 +164,7 @@ Release pending
 * Added: Template & Styles for Custom Taxonomy Artist
 * Added: Contributor List Styles
 * Changed: Bottom Padding H2 Archive View
+* Changed: Smaller Raketenstaub Images @ Archives
 * Removed: Selfreferential Link on Single Raketenstaub
 
 ### 0.4

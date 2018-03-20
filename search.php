@@ -52,11 +52,9 @@ Tweets sind von der Suche ausgeschlossen.
 				<?php
 
 			} elseif (is_post_type('raketenstaub')) {
-				the_excerpt();
 				?>
-	
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<?php the_post_thumbnail('mini'); ?></a>
+				<?php the_post_thumbnail('thumb'); ?></a>
 				<?php
 			} else { 
 				the_excerpt();
