@@ -2683,13 +2683,10 @@ border-bottom: 1px solid #990000;
 	.site-content .pinseldisko,
 	.site-content .podcast,
 	.site-content .raketenstaub,
+	.search-results .site-content .raketenstaub,
 	.site-content .type-attachment,
 	.search-results .site-content .page {
 		padding: 0 0 120px;
-	}
-
-	.search-results .site-content .raketenstaub {
-		padding: 0 0 120px !important;
 	}
 
 	#primary,
