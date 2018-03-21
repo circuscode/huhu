@@ -166,6 +166,7 @@ Release pending
 * Changed: Bottom Padding H2 Archive View
 * Changed: Smaller Raketenstaub Images @ Archives
 * Removed: Selfreferential Link on Single Raketenstaub
+* Fixed: Headline Top Margin @ Search Results Raketenstaub
 
 ### 0.4
 
