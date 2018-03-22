@@ -2552,7 +2552,7 @@ border-bottom: 1px solid #990000;
 		text-align: right;
 		line-height: 1.4;
 		cursor: pointer;
-		z-index: 1000000;
+		z-index: 2000;
 	}
 	.admin-bar .search-toggle {
 		top: 57px;
@@ -2572,7 +2572,7 @@ border-bottom: 1px solid #990000;
 		position: absolute;
 		top: 57px;
 		right: 70px;
-		z-index: 1000000;
+		z-index: 2000;
 	}
 	.admin-bar .search-header {
 		top: 89px;

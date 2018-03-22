@@ -168,6 +168,7 @@ Release pending
 * Changed: Smaller Raketenstaub Images @ Archives
 * Removed: Selfreferential Link on Single Raketenstaub
 * Fixed: Headline Top Margin @ Search Results Raketenstaub
+* Fixed: Side-Effect Envira Styles
 
 ### 0.4
 
