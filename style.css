@@ -1716,11 +1716,25 @@ padding-left:0px !important;
 {margin-right:30px;font-size:1.2rem;}
 
 /* Normalization */
-.wp-pagenavi a.page.larger, .wp-pagenavi a.page.smaller
+.wp-pagenavi a.page.larger, 
+.wp-pagenavi a.page.smaller, 
+.wp-pagenavi a.first,
+.wp-pagenavi a.last,
+.wp-pagenavi .extend,
+.wp-pagenavi .pages,
+.wp-pagenavi a.previouspostslink,
+.wp-pagenavi a.nextpostslink
 {margin-right:30px;font-size:1.2rem;}
 
 /* Space Right */
-.wp-pagenavi .current, .wp-pagenavi .page
+.wp-pagenavi .current,
+.wp-pagenavi .page,
+.wp-pagenavi a.first,
+.wp-pagenavi a.last,
+.wp-pagenavi .extend,
+.wp-pagenavi .pages,
+.wp-pagenavi a.previouspostslink,
+.wp-pagenavi a.nextpostslink
 {float:left;margin-top:20px;}
 
 /* 

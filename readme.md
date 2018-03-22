@@ -163,6 +163,7 @@ Release pending
 * Added: Envira Gallery Styles
 * Added: Template & Styles for Custom Taxonomy Artist
 * Added: Contributor List Styles
+* Improved: wpPage-Navi Styles
 * Changed: Bottom Padding H2 Archive View
 * Changed: Smaller Raketenstaub Images @ Archives
 * Removed: Selfreferential Link on Single Raketenstaub
