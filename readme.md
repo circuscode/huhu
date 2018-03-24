@@ -4,7 +4,7 @@ Huhu is the WordPress Theme running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
-The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended (but technically possible, not tested).
+The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended.
 
 ## Supported WordPress Templates
 
@@ -87,13 +87,6 @@ Included as reference for manual usage.
 * Shortcodes
 * HTML Filter (ensuring W3C valid HTML output)
 
-## Search
-
-Following Post Formats are not included in search.
-
-* Post Format Quote
-* Post Format Image
-
 ## Fonts
 
 Huhu uses the Google Font Source Sans Pro. It will be loaded dynamicly. For local integration all required files are enclosed. 
@@ -110,6 +103,15 @@ Following plugins are required at runtime.
 * [Podlove Publisher](https://publisher.podlove.org)
 * [WP-PageNavi](https://de.wordpress.org/plugins/wp-pagenavi/)
 * [AMP](https://de.wordpress.org/plugins/amp/)
+
+## Plugin Styles Support
+
+In addition styles of the following plugins are supported.
+
+* Lightweight Subscribe Comments
+* Mathilda
+* MailChimp
+* Envira Gallery
 
 ## Custom Fields Dependencies
 
@@ -158,11 +160,11 @@ This project is licensed under the GPL3 License.
 
 ### 0.5
 
-Release pending
+Released: 24.03.2018
 
 * Added: Envira Gallery Styles
 * Added: Template & Styles for Custom Taxonomy Artist
-* Added: Contributor List Styles
+* Added: Podlove Contributor List Styles
 * Improved: wpPage-Navi Styles
 * Changed: Bottom Padding H2 Archive View
 * Changed: Smaller Raketenstaub Images @ Archives
