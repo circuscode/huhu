@@ -4,7 +4,7 @@ Theme URI: http://www.unmus.de/wp-content/themes/huhu
 Description: huhu is based on Suidobashi by Elmastudio
 Author: Marco Hitschler
 Author URI: http://www.unmus.de/
-Version: 0.5
+Version: 0.6
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: simple, minimal, responsive, white
@@ -1799,7 +1799,7 @@ form label[for=subscribe_reloaded_email] {
 .mathilda_bottom_forward
 {margin-top:40px;margin-bottom:0;font-size:120%;}
 
-.mathilda_bottom_forward_number
+.mathilda_bottom_forward_number, .mathilda_extend
 {margin-right:30px;float:left;padding-top:30px;box-shadow:none !important;border-bottom:0 !important;text-decoration:none !important;}
 
 .mathilda_bottom_new_tweets, .mathilda_bottom_previous_tweets 
@@ -1860,6 +1860,19 @@ iframe.twitter-tweet
 {
 	padding-left:0;
 }
+
+.wp-pagenavi a.nextpostslink
+{margin-right:30px;font-size:1.2rem;}
+
+/* Space Right */
+.wp-pagenavi .mathilda_extend
+{float:left;margin-top:20px;}
+
+/* Normalization */
+
+.wp-pagenavi .mathilda_extend
+{margin-right:30px;font-size:1.2rem;}
+
 
 /*
 30. Pinseldisko

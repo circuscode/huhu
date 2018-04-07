@@ -158,6 +158,12 @@ This project is licensed under the GPL3 License.
 
 ## Changelog
 
+### 0.6
+
+Release pending
+
+* Added: CSS @ Mathilda Numbering
+
 ### 0.5
 
 Released: 24.03.2018
