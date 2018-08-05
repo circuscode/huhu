@@ -55,7 +55,8 @@ Table of Contents:
 39 - MailChimp
 40 - Type Raketenstaub
 41 - Envira
-42 - Media Queries
+42 - Media Player
+43 - Media Queries
 
 /*
 1. Reset
@@ -2232,7 +2233,15 @@ border-bottom: 1px solid #990000;
 }
 
 /*
-42. Media Queries
+42. Media Player
+*/
+
+.video-wrapped {
+	margin-bottom: 20px !important;
+}
+
+/*
+43. Media Queries
 */
 
 /* Minimum width of 767 pixels (tablets portrait)

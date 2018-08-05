@@ -163,6 +163,7 @@ This project is licensed under the GPL3 License.
 Release pending
 
 * Added: CSS @ Mathilda Numbering
+* Added: CSS @ Embedded Media Player
 
 ### 0.5
 
