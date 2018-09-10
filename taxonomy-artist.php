@@ -13,7 +13,7 @@ get_header(); ?>
 
 	<header class="tax-header">
 
-		<div class="tax-title">Kategorie:
+		<div class="tax-title">Artist:
 		<?php single_tag_title( ); ?>
 		</div>
 		<div class="tax-description">
