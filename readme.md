@@ -164,7 +164,6 @@ Release pending
 
 * Added: CSS @ Mathilda Numbering
 * Added: CSS @ Embedded Media Player
-* Removed: FitVids Scripts
 * Changed: Taxonomy Label Zirkusliebe
 
 ### 0.5

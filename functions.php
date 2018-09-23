@@ -49,7 +49,7 @@ function huhu_scripts() {
 
 	wp_enqueue_style( 'huhu-fonts', huhu_fonts_url(), array(), null );
 
-	// wp_enqueue_script( 'huhu-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
+	wp_enqueue_script( 'huhu-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
 
 	wp_enqueue_script( 'huhu-script', get_template_directory_uri() . '/js/huhu.js', array( 'jquery' ), '001', true );
 
