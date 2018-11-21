@@ -613,6 +613,10 @@ article h1:first-child {
 	text-transform: uppercase;
 	padding-top: 5px;
 }
+.tax-kollektion .entry-date {
+	font-size: 13px; 
+	text-transform: uppercase;
+}
 .blog .entry-header h2.entry-title,
 .search-results .entry-header h2.entry-title,
 .archive .entry-header h2.entry-title,
@@ -737,6 +741,12 @@ article h1:first-child {
 .single-raketenstaub .entry-license,
 {
 	padding:0 !important;
+}
+
+.single-raketenstaub .entry-cats-list,
+.post-type-archive-raketenstaub .entry-cats-list
+{
+	font-style: italic;
 }
 
 .single-post .entry-meta, 
@@ -2216,11 +2226,11 @@ border-bottom: 1px solid #990000;
 	margin-top:10px;
 }
 
-.tag .raketenstaub h2.entry-title, .search .raketenstaub h2.entry-title, .author .raketenstaub h2.entry-title, .date .raketenstaub h2.entry-title {
+.tag .raketenstaub h2.entry-title, .search .raketenstaub h2.entry-title, .author .raketenstaub h2.entry-title, .date .raketenstaub h2.entry-title, .tax-kollektion h2.entry-title {
 	display:none; 
 }
 
-.tag .raketenstaub .entry-date, .author .raketenstaub .entry-date, .date .raketenstaub .entry-date {
+.tag .raketenstaub .entry-date, .author .raketenstaub .entry-date, .date .raketenstaub .entry-date, .tax-kollektion .entry-date {
 	margin-top:10px;
 }
 

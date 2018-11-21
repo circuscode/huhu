@@ -135,6 +135,9 @@
 		<?php if(get_the_tags()) { ?>
 			<div class="entry-tags">
 			<span class="entry-tags-list"><?php the_tags('', '<br/>', ''); ?></span>
+		<?php } ?>
+		<?php if(get_the_terms($post->ID, 'kollektion')) { ?>
+			<span class="entry-cats-list"><br/><?php the_terms( $post->ID, 'kollektion' ); ?></span>
 			</div>
 		<?php } ?>
 	<?php }
