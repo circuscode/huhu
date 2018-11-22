@@ -43,7 +43,7 @@ get_header(); ?>
 		<div class="entry-content">
 	
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-			<?php the_post_thumbnail('thumb'); ?></a>	
+			<?php the_post_thumbnail('medium'); ?></a>	
 		
 		</div>
 
