@@ -39,7 +39,7 @@ All custom post types have an archive and single template.
 All custom taxonomies have an archive template.
 
 * Artist (Podcast)
-* Kollektion (Raketenstaub)
+* Fotoalbum (Raketenstaub)
 
 ## Supported Post Formats
 
