@@ -608,7 +608,8 @@ article h1:first-child {
 .post-type-archive-pinseldisko .entry-date,
 .post-type-archive-podcast .entry-date,
 .post-type-archive-raketenstaub .entry-date,
-.search-results .entry-date {
+.search-results .entry-date,
+.tax-kunsthalle .entry-date {
 	font-size: 13px; 
 	text-transform: uppercase;
 	padding-top: 5px;
@@ -2230,7 +2231,7 @@ border-bottom: 1px solid #990000;
 	display:none; 
 }
 
-.tag .raketenstaub .entry-date, .author .raketenstaub .entry-date, .date .raketenstaub .entry-date, .tax-fotoalbum .entry-date {
+.tag .raketenstaub .entry-date, .author .raketenstaub .entry-date, .date .raketenstaub .entry-date, .tax-fotoalbum .entry-date, .tax-kunsthalle .entry-date {
 	margin-top:10px;
 }
 

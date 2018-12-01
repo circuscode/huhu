@@ -79,6 +79,12 @@
 		<h1 class=entry-sketchnote-name><?php the_title(); ?></h1>
 		<p class=entry-sketchnote-description><?php the_sketchnote_description(); ?></p>
 		</div>
+		<?php if(get_the_terms($post->ID, 'kunsthalle')) { ?>
+			<div class="entry-tags">
+			<span class="entry-tags-label">Kunsthalle</span>
+			<span class="entry-tags-list"><?php the_terms( $post->ID, 'kunsthalle' ); ?></span>
+			</div>
+		<?php } ?>
 		<?php if(get_the_tags()) { ?>
 			<div class="entry-tags">
 			<span class="entry-tags-label">Schlagworte</span>

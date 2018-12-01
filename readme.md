@@ -163,6 +163,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Added: Pinseldisko Taxonomy
 * Added: Raketenstaub Taxonomy
 * Added: CSS @ Mathilda Numbering
 * Added: CSS @ Embedded Media Player
