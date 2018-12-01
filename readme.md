@@ -163,6 +163,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Added: Tagebuch Taxonomy
 * Added: Pinseldisko Taxonomy
 * Added: Raketenstaub Taxonomy
 * Added: CSS @ Mathilda Numbering

@@ -50,6 +50,12 @@
 		<span class="entry-date-day published"><?php the_date(); ?></span>
 		</div>
 		<?php get_template_part( 'microformats' ) ?>
+		<?php if(get_the_terms($post->ID, 'tagebuch')) { ?>
+			<div class="entry-tags">
+			<span class="entry-tags-label">Tagebuch</span>
+			<span class="entry-tags-list"><?php the_terms( $post->ID, 'tagebuch' ); ?></span>
+			</div>
+		<?php } ?>
 		<?php if(get_the_tags()) { ?>
 			<div class="entry-tags">
 			<span class="entry-tags-label">Schlagworte</span>
