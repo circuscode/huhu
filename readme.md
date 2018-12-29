@@ -163,6 +163,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Added: BETA CSS
 * Added: Tagebuch Taxonomy
 * Added: Pinseldisko Taxonomy
 * Added: Raketenstaub Taxonomy

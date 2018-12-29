@@ -44,8 +44,18 @@ Scripts
 function huhu_scripts() {
 
 	global $wp_styles;
+	wp_register_style( 'style-beta', get_template_directory_uri().'/style-beta.css' ) ;
 
+	/* Styles */
+		
+	$huhu_style_version=get_option('huhu_style_version');
+
+	if($huhu_style_version==1) {
+	wp_enqueue_style( 'style-beta' );
+	}
+	else {
 	wp_enqueue_style( 'huhu-style', get_stylesheet_uri(), array(), '001' );
+	}
 
 	wp_enqueue_style( 'huhu-fonts', huhu_fonts_url(), array(), null );
 
@@ -262,6 +272,74 @@ function huhu_custom_size_rocket( $sizes ) {
 	) );
 }
 add_filter( 'rocket_thumb', 'huhu_custom_size_rocket' );
+
+/*
+Options Menu
+*/
+
+function huhu_options_menu() {
+    add_theme_page("huhu Options", "Options", "manage_options", "theme-options", "huhu_theme_option_page", null, 99);
+}
+
+add_action( 'admin_menu', 'huhu_options_menu');
+
+/*
+Options Page
+*/
+
+function huhu_theme_option_page() {
+	echo '
+	<div class="wrap">
+	<h1>Options › huhu</h1>
+	<p class="huhu_settings">All Settings<br/>&nbsp;</p>
+	
+	<form method="post" action="options.php">';
+	
+	do_settings_sections( 'huhu-options' );
+	settings_fields( 'huhu_settings' );
+	submit_button();
+
+	echo '</form></div><div class="clear"></div>';
+	};
+
+/*
+Fields
+#*/
+
+function huhu_options_display_style_version()
+{
+	echo '<input class="regular-text" type="text" name="huhu_style_version" id="huhu_style_version" value="'. get_option('huhu_style_version') .'"/>';
+}
+
+/* 
+Sections
+*/
+
+function huhu_options_display_basic_description()
+{ echo '<p>Basic Settings</p>'; }
+
+// Theme Basic Settings 
+
+function huhu_options_basic_display()
+{
+	
+	add_settings_section("basic_settings_section", "Theme", "huhu_options_display_basic_description", "huhu-options");
+	
+	add_settings_field("huhu_style_version", "Style Version", "huhu_options_display_style_version", "huhu-options", "basic_settings_section");
+
+	register_setting("huhu_settings", "huhu_style_version", "huhu_style_version");
+
+}
+add_action("admin_init", "huhu_options_basic_display");
+
+/* Validate Input: Style */
+
+function huhu_style_version ( $style ) {
+    
+    $output = $style;
+    return $output;
+
+} 
 
 /*
 Load
