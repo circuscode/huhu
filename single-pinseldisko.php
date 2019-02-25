@@ -21,16 +21,19 @@ get_header(); ?>
         <h1 class="entry-title"><?php the_title(); ?></h1>
 
         <div class="entry-content">
+
         <?php
 
         $image = get_field('pinseldisko_sketchnote_image');
         $size = 'full';
 
-        if( $image ) {
-            echo wp_get_attachment_image( $image, $size );
-        }
+        echo '<p>';
+        echo wp_get_attachment_image( $image, $size );
+        echo '</p>';
 
-?>
+        the_content();
+
+        ?>
 
         </div>
 
