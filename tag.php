@@ -44,7 +44,7 @@ get_header(); ?>
 		<?php 
 		if(is_post_type('pinseldisko')) {
 			echo '<p>';
-			the_sketchnote_description();
+			the_field('pinseldisko_sketchnote_description');
 			echo '</p>'; ?>
 
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">

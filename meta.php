@@ -83,7 +83,7 @@
 		<div class="entry-sketchnote">
 		<div class="entry-sketchnote-label">Sketchnote</div>
 		<h1 class=entry-sketchnote-name><?php the_title(); ?></h1>
-		<p class=entry-sketchnote-description><?php the_sketchnote_description(); ?></p>
+		<p class=entry-sketchnote-description><?php the_field('pinseldisko_sketchnote_description'); ?></p>
 		</div>
 		<?php if(get_the_terms($post->ID, 'kunsthalle')) { ?>
 			<div class="entry-tags">

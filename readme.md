@@ -163,6 +163,9 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Added: Getting started with ACF
+* Added: ACF Field Handling Pinseldisko Description
+* Added: ACF Field Handling Pinseldisko Image
 * Added: BETA CSS
 * Added: Tagebuch Taxonomy
 * Added: Pinseldisko Taxonomy

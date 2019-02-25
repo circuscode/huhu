@@ -21,7 +21,17 @@ get_header(); ?>
         <h1 class="entry-title"><?php the_title(); ?></h1>
 
         <div class="entry-content">
-        <?php the_content(); ?>
+        <?php
+
+        $image = get_field('pinseldisko_sketchnote_image');
+        $size = 'full';
+
+        if( $image ) {
+            echo wp_get_attachment_image( $image, $size );
+        }
+
+?>
+
         </div>
 
         <footer class="entry-footer">

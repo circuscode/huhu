@@ -106,7 +106,7 @@
 		if(is_post_type('pinseldisko')) {  ?>
 			<div class="wp-embed-excerpt">
 			<?php the_excerpt_embed(); ?></div>
-			<?php the_sketchnote_description();
+			<?php the_field('pinseldisko_sketchnote_description');
 		} else {
 			?>
 			<div class="wp-embed-excerpt"><?php the_excerpt_embed(); ?></div>
