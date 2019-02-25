@@ -39,6 +39,8 @@ All custom post types have an archive and single template.
 All custom taxonomies have an archive template.
 
 * Artist (Podcast)
+* Kunsthalle (Pinseldisko)
+* Tagebuch (Zimtwolke)
 * Fotoalbum (Raketenstaub)
 
 ## Supported Post Formats
@@ -104,21 +106,23 @@ Following plugins are required at runtime.
 * [Podlove Publisher](https://publisher.podlove.org)
 * [WP-PageNavi](https://de.wordpress.org/plugins/wp-pagenavi/)
 * [AMP](https://de.wordpress.org/plugins/amp/)
+* [Advanced Custom Fields](https://www.advancedcustomfields.com)
 
 ## Plugin Styles Support
 
 In addition styles of the following plugins are supported.
 
-* Lightweight Subscribe Comments
-* Mathilda
-* MailChimp
 * Envira Gallery
+* Lightweight Subscribe Comments
+* MailChimp
+* Mathilda
 
 ## Custom Fields Dependencies
 
 Following custom fields are supported.
 
 * Custom Field pinseldisko_sketchnote_description
+* Custom Field pinseldisko_sketchnote_image
 * Custom Field licence_type
 * Custom Field licence_version
 * Custom Field licence_include
