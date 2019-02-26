@@ -348,5 +348,6 @@ Load
 require( get_template_directory() . '/inc/filter.php' );
 require( get_template_directory() . '/inc/shortcodes.php' );
 require( get_template_directory() . '/inc/widgets.php' );
+require( get_template_directory() . '/inc/cc.php' );
 
 ?>

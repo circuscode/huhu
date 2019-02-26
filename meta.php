@@ -97,14 +97,22 @@
 			<span class="entry-tags-list"><?php the_tags('', ', ', ''); ?></span>
 			</div>
 		<?php } ?>
-		<?php if (function_exists  ('creative_commons') ) { 
-			$license_available=get_post_meta($post->ID, 'licence_type', true);
-			if ($license_available!='') { ?>
+		<?php 
+		
+		$this_licence = get_field( "licence_type");
+		
+		if ( $this_licence <> 'Null' ) { ?>
 				<div class="entry-license">
 				<span class="entry-license-label">Lizenz</span>
-				<span class="entry-license-name"><?php creative_commons(); ?></span>
+				<span class="entry-license-name">
+				<?php 
+
+				huhu_creative_commons_logo();
+				
+				?>
+				</span>
 				</div>
-			<?php } ?>
+		
 		<?php } ?>
 	<?php }
 

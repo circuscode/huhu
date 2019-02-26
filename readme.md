@@ -177,6 +177,7 @@ Release pending
 * Added: CSS @ Mathilda Numbering
 * Added: CSS @ Embedded Media Player
 * Changed: Taxonomy Label Zirkusliebe
+* Changed: CC Integration @ Pinseldisko
 
 ### 0.5
 
