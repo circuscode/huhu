@@ -113,7 +113,7 @@
 				<span class="entry-license-name">
 				<?php 
 
-				huhu_creative_commons_logo();
+				huhu_creative_commons_logo(get_the_ID());
 				
 				?>
 				</span>
