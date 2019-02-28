@@ -19,7 +19,13 @@ function huhu_creative_commons_logo() {
 
 function huhu_creative_commons_link() {
 
-	$cc_version = get_field( "licence_version" );
+	$this_version=null;
+
+	if (function_exists('get_field')) { 
+		$this_version = get_field( "licence_version");
+	} else { 
+		$this_version = get_post_meta( get_the_ID(), 'licence_version');
+	} 
 	 
 	if ($cc_version=='4') {
 		return 'https://creativecommons.org/licenses/by/4.0/deed.de';

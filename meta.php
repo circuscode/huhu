@@ -99,9 +99,15 @@
 		<?php } ?>
 		<?php 
 		
-		$this_licence = get_field( "licence_type");
+		$this_licence=null;
+
+		if (function_exists('get_field')) { 
+			$this_licence = get_field( "licence_type");
+		} else { 
+			$this_licence = get_post_meta( get_the_ID(), 'licence_type');
+		} 
 		
-		if ( $this_licence <> 'Null' ) { ?>
+		if ( $this_licence <> null ) { ?>
 				<div class="entry-license">
 				<span class="entry-license-label">Lizenz</span>
 				<span class="entry-license-name">
