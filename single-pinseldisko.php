@@ -24,13 +24,6 @@ get_header(); ?>
 
         <?php
 
-        $image = get_field('pinseldisko_sketchnote_image');
-        $size = 'full';
-
-        echo '<p>';
-        echo wp_get_attachment_image( $image, $size );
-        echo '</p>';
-
         the_content();
 
         ?>
