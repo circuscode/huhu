@@ -44,7 +44,7 @@ Tweets sind von der Suche ausgeschlossen.
 			<?php 
 			if(is_post_type('pinseldisko')) {
 				echo '<p>';
-				the_field('pinseldisko_sketchnote_description');
+				echo get_the_excerpt();
 				echo '</p>'; ?>
 
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">

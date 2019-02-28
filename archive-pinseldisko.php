@@ -30,7 +30,7 @@ get_header(); ?>
 
 		<?php /* Text */ ?>
 		<div class="entry-summary">
-		<?php the_field('pinseldisko_sketchnote_description'); ?>
+		<?php the_excerpt(); ?>
 		</div>
 
 		<?php /* Thumbnail */ ?>
