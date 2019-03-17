@@ -99,24 +99,29 @@
 		<?php } ?>
 		<?php 
 		
-		$this_licence=null;
+		/* Creative Commons */
 
-		if (function_exists('get_field')) { 
-			$this_licence = get_field( "licence_type");
-		} else { 
-			$this_licence = get_post_meta( get_the_ID(), 'licence_type');
-		} 
-		
-		if ( $this_licence <> null ) { ?>
+		$huhu_post_id=get_the_ID();
+
+		if ( huhu_is_creative_commons($huhu_post_id)) { ?>
+
 				<div class="entry-license">
 				<span class="entry-license-label">Lizenz</span>
 				<span class="entry-license-name">
 				<?php 
 
-				huhu_creative_commons_logo(get_the_ID());
+				huhu_creative_commons_license_type_string($huhu_post_id);
 				
 				?>
 				</span>
+				<span class="entry-license-logo">
+				<?php 
+
+				huhu_creative_commons_logo($huhu_post_id);
+				
+				?>
+				</span>
+				
 				</div>
 		
 		<?php } ?>
