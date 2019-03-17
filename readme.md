@@ -177,6 +177,7 @@ Release pending
 * Added: CSS @ Embedded Media Player
 * Changed: Taxonomy Label Zirkusliebe
 * Changed: CC Integration @ Pinseldisko
+* Changed: Fade Out Rakentenstaub Text Content
 
 ### 0.5
 
