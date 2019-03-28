@@ -9,7 +9,12 @@
 
 ?>
 
-<?php $current_format=get_post_type(); ?>
+<?php 
+
+$current_format=get_post_type(); 
+$huhu_post_id=get_the_ID();
+
+?>
 
 <div class="entry-meta">
 
@@ -101,8 +106,6 @@
 		
 		/* Creative Commons */
 
-		$huhu_post_id=get_the_ID();
-
 		if ( huhu_is_creative_commons($huhu_post_id)) { ?>
 
 				<div class="entry-license">
@@ -146,15 +149,35 @@
 			<span class="entry-tags-list"><?php the_tags('', ', ', ''); ?></span>
 			</div>
 		<?php } ?>
-		<?php if (function_exists  ('creative_commons') ) { 
-			$license_available=get_post_meta($post->ID, 'licence_type', true);
-			if ($license_available!='') { ?>
+
+		<?php 
+
+		/* Creative Commons */
+
+		if ( huhu_is_creative_commons($huhu_post_id)) { ?>
+
 				<div class="entry-license">
 				<span class="entry-license-label">Lizenz</span>
-				<span class="entry-license-name"><?php creative_commons(); ?></span>
+				<span class="entry-license-name">
+				<?php 
+
+				huhu_creative_commons_license_type_string($huhu_post_id);
+				huhu_creative_commons_excluded_content($huhu_post_id)
+				
+				?>
+				</span>
+				<span class="entry-license-logo">
+				<?php 	
+
+				huhu_creative_commons_ccby_logo($huhu_post_id);
+				
+				?>
+				</span>
+				
 				</div>
-			<?php } ?>
+
 		<?php } ?>
+
 	<?php }
 
 	/* Raketenstaub */
