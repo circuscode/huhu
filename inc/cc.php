@@ -113,7 +113,7 @@ function huhu_creative_commons_the_excluded_content_sentence($id) {
 		$cc_last_media_with_komma = strrchr($cc_exclude, ",");
 		$cc_last_media_with_and = str_replace(",", " und", $cc_last_media_with_komma); 
 		$cc_exclude_string= str_replace($cc_last_media_with_komma, $cc_last_media_with_and, $cc_exclude);
-		$cc_exclude_string=$cc_exclude_string . " ausgeschlossen."; 
+		$cc_exclude_string=$cc_exclude_string . " ausgeschlossen"; 
 	
 		echo $cc_exclude_string;
 	} 
