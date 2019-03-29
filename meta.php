@@ -113,14 +113,14 @@ $huhu_post_id=get_the_ID();
 				<span class="entry-license-name">
 				<?php 
 
-				huhu_creative_commons_license_type_string($huhu_post_id);
+				huhu_creative_commons_the_license_type_stringhref_short($huhu_post_id);
 				
 				?>
 				</span>
 				<span class="entry-license-logo">
 				<?php 
 
-				huhu_creative_commons_logo($huhu_post_id);
+				huhu_creative_commons_the_cc_logo($huhu_post_id);
 				
 				?>
 				</span>
@@ -161,15 +161,21 @@ $huhu_post_id=get_the_ID();
 				<span class="entry-license-name">
 				<?php 
 
-				huhu_creative_commons_license_type_string($huhu_post_id);
-				huhu_creative_commons_excluded_content($huhu_post_id)
+				huhu_creative_commons_the_license_type_stringhref_long($huhu_post_id);
+
+				?>
+				</span>
+				<span class="entry-license-excludes">
+				<?php 
+				
+				huhu_creative_commons_the_excluded_content_sentence($huhu_post_id)
 				
 				?>
 				</span>
 				<span class="entry-license-logo">
 				<?php 	
 
-				huhu_creative_commons_ccby_logo($huhu_post_id);
+				huhu_creative_commons_the_ccby_logo($huhu_post_id);
 				
 				?>
 				</span>

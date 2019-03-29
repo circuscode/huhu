@@ -741,7 +741,7 @@ article h1:first-child {
 .single-raketenstaub .entry-tags, 
 .single-raketenstaub .entry-cats,
 .single-raketenstaub .entry-date,
-.single-raketenstaub .entry-license,
+.single-raketenstaub .entry-license
 {
 	padding:0 !important;
 }
@@ -778,8 +778,13 @@ article h1:first-child {
 .entry-cats-name,
 .entry-sketchnote-name,
 .entry-tags-list,
-.entry-license-name {
+.entry-license-name,
+.entry-license-excludes {
 	font-style:italic;
+}
+
+.entry-license-excludes {
+	display:block;
 }
 
 .license-image {
