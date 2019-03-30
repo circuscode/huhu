@@ -37,15 +37,42 @@ $huhu_post_id=get_the_ID();
 			<span class="entry-tags-list"><?php the_tags('', ', ', ''); ?></span>
 			</div>
 		<?php } ?>
-		<?php if (function_exists  ('creative_commons') ) { 
-			$license_available=get_post_meta($post->ID, 'licence_type', true);
-			if ($license_available!='') { ?>
-				<div class="entry-license">
-				<span class="entry-license-label">Lizenz</span>
-				<span class="entry-license-name"><?php creative_commons(); ?></span>
-				</div>
-			<?php } ?>
+		<?php
+
+		/* Creative Commons */
+
+		if ( huhu_is_creative_commons($huhu_post_id)) { ?>
+
+			<div class="entry-license">
+			<span class="entry-license-label">Lizenz</span>
+			<span class="entry-license-name">
+			<?php 
+
+			huhu_creative_commons_the_simple_string($huhu_post_id);
+			
+			?>
+			</span>
+
+			<span class="entry-license-logo">
+			<?php 
+
+			huhu_creative_commons_the_ccby_greybox($huhu_post_id);
+			
+			?>
+			</span>
+
+			<span class="entry-license-excludes">
+			<?php 
+			
+			huhu_creative_commons_the_excluded_content_sentence($huhu_post_id)
+			
+			?>
+			</span>
+			
+			</div>
+
 		<?php } ?>
+
 	<?php }
 
 	/* Zimtwolke */
@@ -67,14 +94,42 @@ $huhu_post_id=get_the_ID();
 			<span class="entry-tags-list"><?php the_tags('', ', ', ''); ?></span>
 			</div>
 		<?php } ?>
-		<?php if (function_exists  ('creative_commons') ) { 
-			$license_available=get_post_meta($post->ID, 'licence_type', true);
-			if ($license_available!='') { ?>
-				<div class="entry-license">
-				<span class="entry-license-label">Lizenz</span>
-				<span class="entry-license-name"><?php creative_commons(); ?></span>
-				</div>
-			<?php } ?>
+		<?php
+
+		/* Creative Commons */
+
+		if ( huhu_is_creative_commons($huhu_post_id)) { ?>
+
+			<div class="entry-license">
+			<span class="entry-license-label">Lizenz</span>
+			<span class="entry-license-name">
+			<?php 
+
+			huhu_creative_commons_the_license_type_stringhref_short($huhu_post_id);
+			
+			?>
+			</span>
+
+			<span class="entry-license-excludes">
+			<?php 
+			
+			huhu_creative_commons_the_excluded_content_sentence($huhu_post_id)
+			
+			?>
+			</span>
+
+			<span class="entry-license-logo">
+			<?php 
+
+			huhu_creative_commons_the_ccby_logo($huhu_post_id);
+			
+			?>
+			</span>
+
+
+			
+			</div>
+
 		<?php } ?>
 	<?php }
 

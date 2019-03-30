@@ -178,6 +178,8 @@ Release pending
 * Changed: Taxonomy Label Zirkusliebe
 * Changed: CC Process @ Pinseldisko
 * Changed: CC Process @ Zirkusliebe
+* Changed: CC Process @ Posts
+* Changed: CC Process @ Zimtwolke
 
 ### 0.5
 

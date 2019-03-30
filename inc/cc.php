@@ -47,6 +47,22 @@ function huhu_creative_commons_the_ccby_logo($id) {
 	
 }
 
+function huhu_creative_commons_the_ccby_greybox($id) {
+
+	$huhu_theme_url=get_template_directory_uri();
+	
+	echo '<a class="license-image" href="'.huhu_creative_commons_link($id).'">';
+	echo '<img src="'.$huhu_theme_url.'/assets/cc-by-greybox.png" width="150" height="52" alt="Creative Commons CC-BY"/>';
+	echo '</a>';
+	
+}
+
+function huhu_creative_commons_the_simple_string($id) {
+
+	echo '<a href="'.huhu_creative_commons_link($id).'">Creative Commons</a>';
+
+}
+
 function huhu_creative_commons_the_license_type_stringhref_short($id) {
 
 	$cc_type=null;
