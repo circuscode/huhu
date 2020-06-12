@@ -1570,6 +1570,17 @@ padding-left:0px !important;
 	margin: 0 0 28px;
 }
 
+.site-content .white-box p:last-child,
+.site-content .blue-box p:last-child,
+.site-content .yellow-box p:last-child,
+.site-content .red-box p:last-child,
+.site-content .green-box p:last-child,
+.site-content .lightgrey-box p:last-child,
+.site-content .grey-box p:last-child,
+.site-content .dark-box p:last-child {
+	margin: 0 0 3px;
+}
+
 .site-content .white-box ol,
 .site-content .blue-box ol,
 .site-content .yellow-box ol,

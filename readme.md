@@ -180,6 +180,7 @@ Release pending
 * Changed: CC Process @ Zirkusliebe
 * Changed: CC Process @ Posts
 * Changed: CC Process @ Zimtwolke
+* Fixed: Last Paragraph Margin @ Box
 
 ### 0.5
 
