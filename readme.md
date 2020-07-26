@@ -152,6 +152,21 @@ This theme does not add any new logic to WordPress or generate new data within W
 2. Put the critical css into your caching pluin (if applicable)
 3. Copy maintenance.php into the folder wp-content
 
+## Branches
+
+This repository follows the git-flow workflow.
+
+* master branch is the latest release
+* develop branch is the current state of development
+* feature branches contain dedicated features in development
+* bugfix branches contain dedicated bugfixes in development
+* hotfix branches contain dedicated hotfixes in development
+* release branches contain the next release in preparation
+
+## Unterstanding the Deployment
+
+Branches will be deployed continously onto the environments. The master branch is connected with the productive environment and the develop branch is connected with the test environment. The deployment itself is managed by GitHub Actions.
+
 ## Built With
 
 * [Visual Studio Code](https://code.visualstudio.com)
