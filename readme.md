@@ -160,7 +160,7 @@ This repository follows the git-flow workflow.
 * develop branch is the current state of development
 * feature branches contain dedicated features in development
 * bugfix branches contain dedicated bugfixes in development
-* hotfix branches contain dedicated hotfixes in development
+* hotfix branches contain dedicated hotfixes in development  
 * release branches contain the next release in preparation
 
 ## Unterstanding the Deployment
