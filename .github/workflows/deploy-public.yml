@@ -17,4 +17,3 @@ jobs:
         ftp-server: ftp://unmus.de/unmus/public/wordpress/wp-content/themes/huhu
         ftp-username: ${{ secrets.FTP_USER_GUTHUBDEPLOY }}
         ftp-password: ${{ secrets.FTP_PASSWORD_GITHUBDEPLOY }}
-
