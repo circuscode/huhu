@@ -57,8 +57,6 @@ function huhu_scripts() {
 	wp_enqueue_style( 'huhu-style', get_stylesheet_uri(), array(), '001' );
 	}
 
-	wp_enqueue_style( 'huhu-fonts', huhu_fonts_url(), array(), null );
-
 	wp_enqueue_script( 'huhu-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
 
 	wp_enqueue_script( 'huhu-script', get_template_directory_uri() . '/js/huhu.js', array( 'jquery' ), '001', true );
@@ -94,21 +92,6 @@ function is_post_type($type){
     global $wp_query;
     if($type == get_post_type($wp_query->post->ID)) return true;
     return false;
-}
-
-/*
-Google Fonts
-*/
-
-function huhu_fonts_url() {
-
-	$font_url = '';
-
-	if ( 'off' !== _x( 'on', 'Source Sans Pro font: on or off', 'huhu' ) ) {
-		$font_url = add_query_arg( 'family', urlencode( 'Source Sans Pro:400,700,400italic&subset=latin' ), "https://fonts.googleapis.com/css" );
-	}
-	
-	return $font_url;
 }
 
 /*
