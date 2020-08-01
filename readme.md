@@ -92,7 +92,7 @@ Included as reference for manual usage.
 
 ## Fonts
 
-Huhu uses the Google Font Source Sans Pro. It will be loaded dynamicly. For local integration all required files are enclosed. 
+Huhu uses the Font Source Sans Pro. All font files are embedded and will be loaded locally at runtime. Font updates can be fetched at Google Fonts.
 
 ## Languages
 
@@ -190,6 +190,7 @@ Release pending
 * Added: Raketenstaub Taxonomy
 * Added: CSS @ Mathilda Numbering
 * Added: CSS @ Embedded Media Player
+* Changed: Google Font Source Sans Pro locally integrated
 * Changed: Taxonomy Label Zirkusliebe
 * Changed: CC Process @ Pinseldisko
 * Changed: CC Process @ Zirkusliebe
