@@ -175,6 +175,12 @@ This project is licensed under the GPL3 License.
 
 ## Changelog
 
+### 0.7
+
+Release pending
+
+* ...
+
 ### 0.6
 
 Released: 02.08.2020
