@@ -183,60 +183,6 @@ function huhu_moretothetop( $content ) {
 add_filter( 'the_content', 'huhu_moretothetop' );
 
 /*
-AMP
-*/
-
-function huhu_amp_set_custom_template( $file, $type, $post ) {
-	if ( 'single' === $type ) {
-		$file = dirname( __FILE__ ) . '/amp/amp-single-post.php';
-	}
-	return $file;
-}
-add_filter( 'amp_post_template_file', 'huhu_amp_set_custom_template', 10, 3 );
-
-function huhu_amp_set_custom_template_style( $file, $type, $post ) {
-	if ( 'style' === $type ) {
-		$file = dirname( __FILE__ ) . '/amp/style.php';
-	}
-	return $file;
-}
-add_filter( 'amp_post_template_file', 'huhu_amp_set_custom_template_style', 10, 3 );
-
-function huhu_amp_add_review_cpt() {
-	add_post_type_support( 'ello', AMP_QUERY_VAR );
-	add_post_type_support( 'pinseldisko', AMP_QUERY_VAR );
-}
-add_action( 'amp_init', 'huhu_amp_add_review_cpt' );
-
-function huhu_amp_set_review_template( $file, $type, $post ) {
-	if ( 'single' === $type && 'ello' === $post->post_type ) {
-		$file = dirname( __FILE__ ) . '/amp/amp-single-ello.php';
-	}
-	if ( 'single' === $type && 'pinseldisko' === $post->post_type ) {
-		$file = dirname( __FILE__ ) . '/amp/amp-single-pinseldisko.php';
-	}
-	if ( 'single' === $type && 'raketenstaub' === $post->post_type ) {
-		$file = dirname( __FILE__ ) . '/amp/amp-single-raketenstaub.php';
-	}
-	return $file;
-}
-add_filter( 'amp_post_template_file', 'huhu_amp_set_review_template', 10, 3 );
-
-function huhu_amp_modify_json_metadata( $metadata, $post ) {
-    if (!array_key_exists('image', $metadata)) {
-	$metadata['image'] = array(
-            '@type' => 'ImageObject',
-            'url' => 'https://www.unmus.de/wp-content/themes/huhu/amp/amp-thumbnail.jpg',
-            'height' => 500,
-            'width' => 800,
-        );
-    }
-    return $metadata;
-}
-add_filter( 'amp_post_template_metadata', 'huhu_amp_modify_json_metadata', 10, 2 );
-;
-
-/*
 Image Size
 */
 
