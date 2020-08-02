@@ -177,7 +177,7 @@ This project is licensed under the GPL3 License.
 
 ### 0.6
 
-Release pending
+Released: 02.08.2020
 
 * Added: Getting started with ACF
 * Added: Using Excerpt Pinseldisko Description
