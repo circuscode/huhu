@@ -61,13 +61,6 @@ Post Formats are designed for the usage with CPT Ello.
 * About
 * Microformats 
 
-## AMP Support
-
-* Single Post
-* Single Ello
-* Single Pinseldisko
-* Single Raketenstaub
-
 ## Advanced Functionality
 
 * [Microformats](http://microformats.org)
@@ -152,16 +145,20 @@ This theme does not add any new logic to WordPress or generate new data within W
 2. Put the critical css into your caching pluin (if applicable)
 3. Copy maintenance.php into the folder wp-content
 
+## Previous Functions
+
+* AMP Support: Post, Ello, Pinseldisko, Raketenstaub
+
 ## Branches
 
-This repository follows the git-flow workflow.
+This repository follows the git-flow workflow widely.
 
 * master branch is the latest release
 * develop branch is the current state of development
-* feature branches contain dedicated features in development
+* feature branches contain dedicated large features in development
 * bugfix branches contain dedicated bugfixes in development
 * hotfix branches contain dedicated hotfixes in development  
-* release branches contain the next release in preparation
+* release branches will not applied
 
 ## Unterstanding the Deployment
 
