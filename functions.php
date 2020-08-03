@@ -44,10 +44,11 @@ Scripts
 function huhu_scripts() {
 
 	global $wp_styles;
+
+	/* Styles 
+
 	wp_register_style( 'style-beta', get_template_directory_uri().'/style-beta.css' ) ;
 
-	/* Styles */
-		
 	$huhu_style_version=get_option('huhu_style_version');
 
 	if($huhu_style_version==1) {
@@ -55,7 +56,9 @@ function huhu_scripts() {
 	}
 	else {
 	wp_enqueue_style( 'huhu-style', get_stylesheet_uri(), array(), '001' );
-	}
+	} */
+
+	wp_enqueue_style( 'huhu-style', get_stylesheet_uri(), array(), '001' );
 
 	wp_enqueue_script( 'huhu-fitvids', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
 
@@ -254,7 +257,7 @@ function huhu_options_basic_display()
 	
 	add_settings_section("basic_settings_section", "Theme", "huhu_options_display_basic_description", "huhu-options");
 	
-	add_settings_field("huhu_style_version", "Style Version", "huhu_options_display_style_version", "huhu-options", "basic_settings_section");
+	add_settings_field("huhu_style_version", "Example Setting", "huhu_options_display_style_version", "huhu-options", "basic_settings_section");
 
 	register_setting("huhu_settings", "huhu_style_version", "huhu_style_version");
 

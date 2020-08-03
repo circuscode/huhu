@@ -175,6 +175,13 @@ This project is licensed under the GPL3 License.
 
 ## Changelog
 
+### 0.7
+
+Release pending
+
+* Changed: Download GIF moved to Asses
+* Removed: Beta CSS Process
+
 ### 0.6
 
 Released: 02.08.2020
