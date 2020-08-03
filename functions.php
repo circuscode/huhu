@@ -189,6 +189,8 @@ add_filter( 'the_content', 'huhu_moretothetop' );
 Image Size
 */
 
+// See Excel File as reference
+
 add_image_size('extra_large', 1300, 0, false);
 function huhu_custom_sizes( $sizes ) {
     return array_merge( $sizes, array(
@@ -204,6 +206,22 @@ function huhu_custom_size_rocket( $sizes ) {
 	) );
 }
 add_filter( 'rocket_thumb', 'huhu_custom_size_rocket' );
+
+add_image_size('huhu_wp_medium', 300, 300, false);
+function huhu_wp_standard_medium( $sizes ) {
+    return array_merge( $sizes, array(
+        'huhu_wp_medium' => __( 'WP Standard Medium' ),
+	) );
+}
+add_filter( 'huhu_wp_medium', 'huhu_wp_standard_medium' );
+
+add_image_size('huhu_wp_large', 1024, 1024, false);
+function huhu_wp_standard_large( $sizes ) {
+    return array_merge( $sizes, array(
+        'huhu_wp_large' => __( 'WP Standard Large' ),
+	) );
+}
+add_filter( 'huhu_wp_large', 'huhu_wp_standard_large' );
 
 /*
 Options Menu
