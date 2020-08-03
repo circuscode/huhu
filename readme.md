@@ -179,7 +179,8 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
-* ...
+* Changed: Download GIF moved to Asses
+* Removed: Beta CSS Process
 
 ### 0.6
 

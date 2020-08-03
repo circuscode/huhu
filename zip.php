@@ -26,7 +26,7 @@ get_header(); ?>
         <?php the_content(); 
         
         $huhu_download_image=get_template_directory_uri();
-        $huhu_download_image=$huhu_download_image.'/download.gif';
+        $huhu_download_image=$huhu_download_image.'/assets/download.gif';
 
         ?>
 
