@@ -83,6 +83,13 @@ Included as reference for manual usage.
 * Shortcodes
 * HTML Filter (ensuring W3C valid HTML output)
 
+## Image Sizes
+
+* 300x300 (WP Standard Medium)
+* 250x250c (Rocket Thumb)
+* 1300x0 (Extra Large)
+* 1024x1024 (WP Standard Large)
+
 ## Fonts
 
 Huhu uses the Font Source Sans Pro. All font files are embedded and will be loaded locally at runtime. Font updates can be fetched at Google Fonts.
@@ -179,6 +186,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Added: WordPress Standard Image Sizes
 * Changed: Download GIF moved to Asses
 * Removed: Beta CSS Process
 
