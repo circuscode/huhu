@@ -124,46 +124,36 @@ function the_sketchnote_description () {
 Comments
 */
 
-function huhu_comment( $comment, $args, $depth ) {
+function huhu_comments($comment, $args, $depth){
 
-	$GLOBALS['comment'] = $comment;
-	switch ( $comment->comment_type ) :
-		case '' :
+	//checks if were using a div or ol|ul for our output
+	$tag = ( 'div' === $args['style'] ) ? 'div' : 'li';
+
 	?>
 
-	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+	<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $args['has_children'] ? 'parent' : '', $comment ); ?>>
 
-		<div id="comment-<?php comment_ID(); ?>" class="comment">
+		<article id="comment-<?php comment_ID(); ?>" class="comment">
 
-		<div class="comment-avatar">
-		<?php echo get_avatar( $comment, 80 ); ?>
-		</div>
+			<div class="comment-avatar">
+				<?php echo get_avatar( $comment, 80 ); ?>
+			</div>
 
-		<div class="comment-details">
-		<?php comment_author_link(); ?>
-		<span class="comment-time"><?php comment_date( ); ?></span>
-		</div>
+				<p class="comment-details cf">
+					<?php comment_author_link(); ?>
+					<span class="comment-time"><?php comment_date( ); ?></span>
+				</p><!-- end .comment-details -->
 
-		<div class="comment-text">
-		<?php comment_text(); ?>
-			<?php if ( $comment->comment_approved == '0' ) : ?>
-				<p class="comment-awaiting-moderation">Dein Kommentar befindet sich in Moderation.</p>
-			<?php endif; ?>
-		</div>
+			<div class="comment-text">
+			<?php comment_text(); ?>
+				<?php if ( $comment->comment_approved == '0' ) : ?>
+					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'suidobashi' ); ?></p>
+				<?php endif; ?>
+			</div><!-- end .comment-text -->
 
-		</div>
+		</article><!-- end .comment -->
 
 	<?php
-		break;
-		case 'pingback'  :
-		case 'trackback' :
-	?>
-
-	<li class="pingback"><p>Pingback: <?php comment_author_link(); ?></p>
-	
-	<?php
-	break;
-	endswitch;
 }
 
 /*
