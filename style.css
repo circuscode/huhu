@@ -1245,7 +1245,7 @@ video {
 	text-transform: uppercase;
 }
 #comments .comment-text {
-	margin: 20px 10px 0px 80px;
+	margin: 10px 10px 0px 80px;
 	overflow: hidden;
 }
 #comments .comment-text p {
