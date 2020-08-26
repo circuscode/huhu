@@ -30,7 +30,15 @@
 	</div>
 
 	<ol class="comments-list">
-    <?php wp_list_comments( array( 'callback' => 'huhu_comment' ) ); ?>
+    <?php
+			wp_list_comments( array(
+				'avatar_size' => 40,
+				'style'       => 'li',
+				'short_ping'  => true,
+				'format'      => 'html5',
+				'callback'    => 'huhu_comments',
+			) );
+	?>
 	</ol>
 
 <?php endif; ?>
