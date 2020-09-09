@@ -2114,6 +2114,10 @@ background:#459baf; color:#fff
 	display:none;
 }
 
+.single-podcast .entry-content .podlove-contributors-card-services a {
+	border-bottom:0px solid #990000 !important;
+}
+
 /* 
 34. Article Specified 
 */
