@@ -1853,6 +1853,9 @@ form label[for=subscribe_reloaded_email] {
 .mathilda-tweet-image
 {padding-left:50px;max-width:100%;}
 
+.mathilda-tweet-video-link
+{position:relative;top:7px;padding-left:50px;}
+
 .entry-content .mathilda-url-follows
 {margin-bottom:2px;}
 
