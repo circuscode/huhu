@@ -150,6 +150,14 @@ body {
 	max-width: 700px;
 }
 
+/* Gutenberg Rendering Correction WordPress 5.7 */
+/* For blank lines */
+
+p:empty:before {
+	content: "";
+	display:none !important;
+	}
+
 /*
 3. Header
 */

@@ -186,6 +186,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Added: Gutenberg Rendering Correction WordPress 5.7
 * Added: WordPress Standard Image Sizes
 * Changed: Download GIF moved to Asses
 * Fixed: Visibility Comment List WordPress 5.5
