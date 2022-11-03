@@ -2800,6 +2800,7 @@ border-bottom: 1px solid #990000;
 		padding: 0 0 120px;
 	}
 
+
 	#primary,
 	#archive-nav {
 		padding-left:70px;
@@ -3079,6 +3080,11 @@ border-bottom: 1px solid #990000;
 		padding-right: 230px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.search .site-content .raketenstaub
+	{
+		max-width:960px !important;
 	}
 	
 	/* --- Footer --- */
