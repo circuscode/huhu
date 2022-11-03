@@ -190,6 +190,7 @@ Release pending
 * Added: WordPress Standard Image Sizes
 * Changed: Download GIF moved to Asses
 * Fixed: Visibility Comment List WordPress 5.5
+* Fixed: Layout Issue with Search Results on Large Screens affecting Raketenstaub
 * Removed: Beta CSS Process
 * Adjusted: Podlove Contributors CSS
 
