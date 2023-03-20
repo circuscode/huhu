@@ -16,4 +16,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD_GITHUBDEPLOY }}
         protocol: ftp
         server-dir: unmus/dev/wordpress/wp-content/themes/huhu/
-
+        exclude: |
+          **/.git*
+          **/.git*/**
+          readme.md
