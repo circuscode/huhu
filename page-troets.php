@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for page troets
+ * The template for page toots
  *
  * @package huhu
  * @since 0.7
@@ -20,14 +20,18 @@ get_header(); ?>
 
         <?php
 
-        $tootpress_page=tootpress_get_query_var();
-        $title_suffix;
+        if(function_exists('tootpress_activate')) {
 
-        if($tootpress_page==1) {
-                $title_suffix='';
-        }
-        else {
-                $title_suffix=' - Seite '.$tootpress_page;
+            $tootpress_page=tootpress_get_query_var();
+            $title_suffix;
+
+            if($tootpress_page==1) {
+                    $title_suffix='';
+            }
+            else {
+                    $title_suffix=' - Seite '.$tootpress_page;
+            }
+
         }
 
         ?>
