@@ -15,5 +15,5 @@ jobs:
         username: ${{ secrets.FTP_USER_GUTHUBDEPLOY }}
         password: ${{ secrets.FTP_PASSWORD_GITHUBDEPLOY }}
         protocol: ftp
-        server-dir: unmus/public/wordpress/wp-content/themes/huhu/
+        server-dir: unmus/dev/wordpress/wp-content/themes/huhu/
 
