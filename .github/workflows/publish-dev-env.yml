@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp://unmus.de
+        server: unmus.de
           username: ${{ secrets.FTP_USER_GUTHUBDEPLOY }}
           password: ${{ secrets.FTP_PASSWORD_GITHUBDEPLOY }}
           protocol: ftp
