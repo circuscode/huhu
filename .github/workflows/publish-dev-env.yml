@@ -1,0 +1,19 @@
+on: push
+name: 🚀 Deploy@Dev
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ftp://unmus.de
+          username: ${{ secrets.FTP_USER_GUTHUBDEPLOY }}
+          password: ${{ secrets.FTP_PASSWORD_GITHUBDEPLOY }}
+          protocol: ftp
+          server-dir: unmus/dev/wordpress/wp-content/themes/huhu/
+          dry-run: true
