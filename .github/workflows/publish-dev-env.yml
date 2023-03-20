@@ -8,12 +8,13 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
-    - name: 📂 Sync files
+    - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.samkirkland.com
+        server: unmus.de
         username: ${{ secrets.FTP_USER_GUTHUBDEPLOY }}
         password: ${{ secrets.FTP_PASSWORD_GITHUBDEPLOY }}
         protocol: ftp
         server-dir: unmus/public/wordpress/wp-content/themes/huhu/
         dry-run: true
+
