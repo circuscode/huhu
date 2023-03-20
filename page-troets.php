@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for page toots
+ * The template for page troets
  *
  * @package huhu
  * @since 0.7
