@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - master
+name: Deploy@Dev
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest code
+      uses: actions/checkout@v3
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: unmus.de
+        username: ${{ secrets.FTP_USER_GUTHUBDEPLOY }}
+        password: ${{ secrets.FTP_PASSWORD_GITHUBDEPLOY }}
+        protocol: ftp
+        server-dir: unmus/public/wordpress/wp-content/themes/huhu/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          readme.md

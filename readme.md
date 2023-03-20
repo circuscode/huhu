@@ -116,6 +116,7 @@ In addition styles of the following plugins are supported.
 * Lightweight Subscribe Comments
 * MailChimp
 * Mathilda
+* TootPress
 
 ## Custom Fields Dependencies
 
@@ -186,6 +187,7 @@ This project is licensed under the GPL3 License.
 
 Release pending
 
+* Added: TootPress Support (Styles & Template)
 * Added: Gutenberg Rendering Correction WordPress 5.7
 * Added: WordPress Standard Image Sizes
 * Changed: Download GIF moved to Asses
