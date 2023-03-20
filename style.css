@@ -43,6 +43,7 @@ Table of Contents:
 27 - Plugin wpPage Navi
 28 - Plugin Subscribe Comments Reloaded
 29 - Plugin Mathilda
+2X - Plugin TootPress
 30 - Type Pinseldisko
 31 - Type Zimtwolke
 32 - Page Wordpress
@@ -1936,14 +1937,86 @@ iframe.twitter-tweet
 {margin-right:30px;font-size:1.2rem;}
 
 /* Space Right */
-.wp-pagenavi .mathilda_extend
+.wp-pagenavi .mathilda_extend, .wp-pagenavi .tootpress_nav_dots
 {float:left;margin-top:20px;}
 
 /* Normalization */
 
-.wp-pagenavi .mathilda_extend
+.wp-pagenavi .mathilda_extend, .wp-pagenavi .tootpress_nav_dots
 {margin-right:30px;font-size:1.2rem;}
 
+/* 
+2X. TootPress 
+*/
+
+.tootpress-toot {
+    margin-bottom: 60px;
+    clear:both;
+}
+
+.tootpress-toot-symbol {
+    float:left !important;
+    margin-top:5px;
+}
+
+.toot-content, .toot-date, .toot-image {
+    margin-left:60px;
+}
+
+.toot-date p {
+    margin-bottom:0px;
+	font-size:80%;
+}
+
+.toot-content p {
+    margin-top:3px;
+	margin-bottom:10px;
+}
+
+.toot-image img {
+    max-width: 100%;
+}
+
+.tootpress_nav {
+    margin-top:80px;
+    width:100%;
+}
+
+.tootpress_nav_number {
+    margin-right:30px;
+	font-size:120%;
+	color:#000 !important;
+	padding-top:40px;
+}
+
+a.tootpress_nav_number  {
+	text-decoration:none !important;
+	border-bottom: 0px!important;
+}
+
+.tootpress_nav .active {
+    font-weight:bold !important;
+}
+
+.tootpress_nav_dots {
+    margin-right:30px;
+}
+
+.tootpress_nav_standard_newer_toots {
+    margin-right:30px;
+}
+
+.tootpress-is-here h1.entry-title {
+	display:none;
+}
+
+.tootpress-is-here .site-content article {
+	max-width:100%;
+}
+
+.tootpress-is-here .entry-content {
+	max-width:100% !important;
+}
 
 /*
 30. Pinseldisko
@@ -2566,8 +2639,8 @@ border-bottom: 1px solid #990000;
 		margin: 110px 0 0 0;
 	}
 
-	.mathilda_bottom_forward
-	{margin-top:80px;}
+	._bottom_forward, div.tootpress_nav
+	{margin-top:80px !important;}
 
 }
 
@@ -2902,7 +2975,7 @@ border-bottom: 1px solid #990000;
 	 	padding-left: 0;
 	 	padding-right: 0;
 	}
-	#mathilda_area
+	#mathilda_area, #tootpress-area
 	{
 	max-width: 960px !important;
 	}
