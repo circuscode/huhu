@@ -4,7 +4,7 @@ Huhu is the WordPress Theme running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
-The WordPress Theme Huhu is an reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended.
+The WordPress Theme Huhu is a reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended.
 
 ## Supported WordPress Templates
 
@@ -60,6 +60,11 @@ Post Formats are designed for the usage with CPT Ello.
 * Meta 
 * About
 * Microformats 
+
+## Special Templates
+
+* Page Tweets (Mathilda)
+* Page Troets (TootPress)
 
 ## Advanced Functionality
 
@@ -185,7 +190,7 @@ This project is licensed under the GPL3 License.
 
 ### 0.7
 
-Release pending
+Released: 22.08.2023
 
 * Added: TootPress Support (Styles & Template)
 * Added: Gutenberg Rendering Correction WordPress 5.7

@@ -20,15 +20,13 @@ get_header(); ?>
 
         <?php
 
+        $title_suffix='';
+
         if(function_exists('tootpress_activate')) {
 
             $tootpress_page=tootpress_get_query_var();
-            $title_suffix;
 
-            if($tootpress_page==1) {
-                    $title_suffix='';
-            }
-            else {
+            if(!$tootpress_page==1) {
                     $title_suffix=' - Seite '.$tootpress_page;
             }
 
