@@ -164,14 +164,14 @@ This theme does not add any new logic to WordPress or generate new data within W
 
 ## Branches
 
-This repository follows the git-flow workflow widely.
+This repository follows the git-flow workflow to a large extent.
 
 * master branch is the latest release
 * develop branch is the current state of development
-* feature branches contain dedicated large features in development
+* feature branches contain dedicated features in development
 * bugfix branches contain dedicated bugfixes in development
-* hotfix branches contain dedicated hotfixes in development  
-* release branches will not applied
+
+Hotfix and release branches will not be applied.
 
 ## Unterstanding the Deployment
 
