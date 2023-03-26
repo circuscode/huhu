@@ -1863,7 +1863,7 @@ form label[for=subscribe_reloaded_email] {
 {padding-left:50px;max-width:100%;}
 
 .mathilda-tweet-video-link
-{position:relative;top:7px;padding-left:50px;}
+{position:relative;top:7px;padding-left:50px;overflow:hidden; word-break: break-all;}
 
 .entry-content .mathilda-url-follows
 {margin-bottom:2px;}
@@ -1900,7 +1900,7 @@ padding-left: 0 !important;}
 {overflow:hidden; }
 
 a.mathilda-tweet-url-link
-{border-bottom-color:darkred !important;overflow:hidden; }
+{border-bottom-color:darkred !important;overflow:hidden; word-break: break-all;}
 
 a.mathilda-hashtag, a.mathilda-mention
 {border-bottom-width:0;}
