@@ -171,7 +171,7 @@ This repository follows the git-flow workflow to a large extent.
 * feature branches contain dedicated features in development
 * bugfix branches contain dedicated bugfixes in development
 
-Hotfix and release branches will not be applied.
+Hotfix and release branches will not be applied in most cases.
 
 ## Unterstanding the Deployment
 
@@ -188,9 +188,15 @@ This project is licensed under the GPL3 License.
 
 ## Changelog
 
+### 0.7.1
+
+Released: 27.03.2023
+
+* Fixed: URL Breakout (Tweets)
+
 ### 0.7
 
-Released: 22.08.2023
+Released: 22.03.2023
 
 * Added: TootPress Support (Styles & Template)
 * Added: Gutenberg Rendering Correction WordPress 5.7
