@@ -4,7 +4,7 @@ Theme URI: http://www.unmus.de/wp-content/themes/huhu
 Description: huhu is based on Suidobashi by Elmastudio
 Author: Marco Hitschler
 Author URI: http://www.unmus.de/
-Version: 0.7
+Version: 0.7.1
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: simple, minimal, responsive, white
@@ -1863,7 +1863,7 @@ form label[for=subscribe_reloaded_email] {
 {padding-left:50px;max-width:100%;}
 
 .mathilda-tweet-video-link
-{position:relative;top:7px;padding-left:50px;}
+{position:relative;top:7px;padding-left:50px;overflow:hidden; word-break: break-all;}
 
 .entry-content .mathilda-url-follows
 {margin-bottom:2px;}
@@ -1900,7 +1900,7 @@ padding-left: 0 !important;}
 {overflow:hidden; }
 
 a.mathilda-tweet-url-link
-{border-bottom-color:darkred !important;overflow:hidden; }
+{border-bottom-color:darkred !important;overflow:hidden; word-break: break-all;}
 
 a.mathilda-hashtag, a.mathilda-mention
 {border-bottom-width:0;}
