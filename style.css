@@ -4,7 +4,7 @@ Theme URI: http://www.unmus.de/wp-content/themes/huhu
 Description: huhu is based on Suidobashi by Elmastudio
 Author: Marco Hitschler
 Author URI: http://www.unmus.de/
-Version: 0.7.1
+Version: 0.7.2
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: simple, minimal, responsive, white
@@ -57,7 +57,8 @@ Table of Contents:
 40 - Type Raketenstaub
 41 - Envira
 42 - Media Player
-43 - Media Queries
+43 - Gutenberg
+44 - Media Queries
 
 /*
 1. Reset
@@ -2388,7 +2389,15 @@ border-bottom: 1px solid #990000;
 }
 
 /*
-43. Media Queries
+43. Gutenberg
+*/
+
+.wp-block-image {
+	margin-bottom: 20px !important;
+}
+
+/*
+44. Media Queries
 */
 
 /* Minimum width of 767 pixels (tablets portrait)

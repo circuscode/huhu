@@ -188,6 +188,12 @@ This project is licensed under the GPL3 License.
 
 ## Changelog
 
+### 0.7.2
+
+Released: 13.04.2023
+
+* Added: Styles for wp-block-image (Gutenberg)
+
 ### 0.7.1
 
 Released: 27.03.2023
