@@ -1974,6 +1974,10 @@ iframe.twitter-tweet
 	margin-bottom:10px;
 }
 
+.toot-content a {
+	word-break: break-all;
+}
+
 .toot-image img {
     max-width: 100%;
 }

@@ -175,7 +175,7 @@ Hotfix and release branches will not be applied in most cases.
 
 ## Unterstanding the Deployment
 
-Branches will be deployed continously onto the environments. The master branch is connected with the productive environment and the develop branch is connected with the test environment. The deployment itself is managed by GitHub Actions.
+Branches will be deployed continously onto the environments. The master branch is connected with the productive environment and the develop branch is connected with the test environment. The deployment itself is managed by GitHub Actions. Releases are not used in the regular way. Releases can be understood as freeze of functional bundels.
 
 ## Built With
 
@@ -188,17 +188,13 @@ This project is licensed under the GPL3 License.
 
 ## Changelog
 
-### 0.7.2
+### 0.8
 
-Released: 13.04.2023
+Release pending
 
 * Added: Styles for wp-block-image (Gutenberg)
-
-### 0.7.1
-
-Released: 27.03.2023
-
-* Fixed: URL Breakout (Tweets)
+* Fixed: URL Breakout on Mobile (Toots)
+* Fixed: URL Breakout on Mobile (Tweets)
 
 ### 0.7
 
