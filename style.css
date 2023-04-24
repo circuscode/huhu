@@ -58,7 +58,8 @@ Table of Contents:
 41 - Envira
 42 - Media Player
 43 - Gutenberg
-44 - Media Queries
+44 - Embed Privacy
+45 - Media Queries
 
 /*
 1. Reset
@@ -2401,7 +2402,20 @@ border-bottom: 1px solid #990000;
 }
 
 /*
-44. Media Queries
+44. Embed Privacy
+*/
+
+.embed-privacy-overlay a {
+	color:white !important;
+	border-color: white !important;
+}
+
+.embed-privacy-input-wrapper {
+	display:none;
+}
+
+/*
+45. Media Queries
 */
 
 /* Minimum width of 767 pixels (tablets portrait)
