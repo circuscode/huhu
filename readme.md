@@ -193,6 +193,7 @@ This project is licensed under the GPL3 License.
 Release pending
 
 * Added: Styles for wp-block-image (Gutenberg)
+* Added: Styles for Embedded Content (Embed Privacy)
 * Fixed: URL Breakout on Mobile (Toots)
 * Fixed: URL Breakout on Mobile (Tweets)
 
