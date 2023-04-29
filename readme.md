@@ -194,8 +194,9 @@ Release pending
 
 * Added: Styles for wp-block-image (Gutenberg)
 * Added: Styles for Embedded Content (Embed Privacy)
-* Fixed: URL Breakout on Mobile (Toots)
-* Fixed: URL Breakout on Mobile (Tweets)
+* Bugfix: URL Breakout on Mobile (Toots)
+* Bugfix: URL Breakout on Mobile (Tweets)
+* Bugfix: Not declared Variable in Date/Author archive
 
 ### 0.7
 

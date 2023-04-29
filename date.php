@@ -61,8 +61,7 @@ get_header(); ?>
 	while ( have_posts() ) : the_post(); ?>
 
 		<?php 
-		$format = get_post_format( $post_id ); 
-		if($format!='quote' && $format!='image') {
+			if(!has_post_format( array( 'quote', 'image' ))) {
 		?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
