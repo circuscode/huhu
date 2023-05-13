@@ -16,7 +16,7 @@ get_header(); ?>
 <?php echo absint($wp_query->found_posts); ?> <?php printf( 'Suchergebnisse für %s', '<span class="searchterm">' . get_search_query() . '</span>' ); ?>
 </div>
 <div class="search-results-description">
-Tweets sind von der Suche ausgeschlossen.
+Tröts sowie Tweets sind von der Suche ausgeschlossen.
 </div>	
 </header>
 
