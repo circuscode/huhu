@@ -190,7 +190,7 @@ This project is licensed under the GPL3 License.
 
 ### 0.8
 
-Release pending
+Released: 26.04.2024
 
 * Added: Styles for wp-block-image (Gutenberg)
 * Added: Styles for Embedded Content (Embed Privacy)

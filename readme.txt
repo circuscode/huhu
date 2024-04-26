@@ -3,7 +3,7 @@
 Contributors: unmus
 Stable tag: 0.8
 Requires at least: 4.9
-Tested up to: 6.1
+Tested up to: 6.5
 Requires PHP: 7.0
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
