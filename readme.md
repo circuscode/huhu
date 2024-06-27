@@ -1,6 +1,6 @@
 # huhu
 
-Huhu is the WordPress Theme running on [unmus.de](https://www.unmus.de/).
+Huhu is the WordPress Theme formerly running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
