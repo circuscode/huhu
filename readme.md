@@ -1,10 +1,10 @@
 # huhu
 
-Huhu is the WordPress Theme formerly running on [unmus.de](https://www.unmus.de/).
+Huhu is the WordPress Classic Theme formerly running on [unmus.de](https://www.unmus.de/).
 
 ## Description 
 
-The WordPress Theme Huhu is a reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended.
+The WordPress Classic Theme Huhu is a reengineered variant of the [Suidobashi Theme](https://www.elmastudio.de/wordpress-themes/suidobashi/) by [Elmastudio](https://www.elmastudio.de/). It's created specially for [unmus.de](https://www.unmus.de/). Using huhu on other WordPress is not recommended.
 
 ## Supported WordPress Templates
 
